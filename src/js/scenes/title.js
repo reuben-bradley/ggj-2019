@@ -11,6 +11,8 @@ export default class Title extends Phaser.Scene {
     }
 
     create() {
+        console.log('PHASER', Phaser);
+        console.log('Title create');
         WebFont.load({
             google: {
                 families: [config.textStyles.title.fontFamily, config.textStyles.default.fontFamily]
@@ -25,7 +27,7 @@ export default class Title extends Phaser.Scene {
 
         this.input.manager.enabled = true;
         this.input.once('pointerdown', () => {
-            this.scene.start('main');
+            this.scene.start('play');
         }, this);
     }
 };
