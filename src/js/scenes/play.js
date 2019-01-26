@@ -4,7 +4,7 @@ import Person from '../actors/Person';
 import Control from '../ui/Control';
 
 import dummyStageImg from 'assets/dummy-stage.png';
-import personImg from 'assets/person.png';
+import danceSprites from 'assets/dance-ss-small-2.png';
 
 export default class Play extends Phaser.Scene {
   constructor() {
@@ -13,10 +13,25 @@ export default class Play extends Phaser.Scene {
 
   preload() {
     this.load.image('dummy-stage', dummyStageImg);
-    this.load.image('person', personImg);
+    this.load.spritesheet('dance-ss-small', danceSprites, {
+      frameWidth: 104,
+      frameHeight: 160
+    });
+
+    console.log('PLAY', this);
   }
 
   create() {
+    const frames = this.anims.generateFrameNumbers('dance-ss-small');
+    console.log('frames', frames);
+
+    this.anims.create({
+        key: 'dance',
+        frames: 'dance-ss-small',
+        frameRate: 1,
+        repeat: -1
+    });
+
     this.setupStage();
     this.setupSpawnLocations();
     this.setupParty();

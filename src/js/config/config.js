@@ -40,7 +40,9 @@ const config = {
     newPersonSpawnTime: 6000,
     maxPersons: 10,
     happinessDecline: -2,
-    happinessGrowth: 1
+    happinessGrowth: 1,
+    minPersonDanceFrameTime: 120,
+    maxPersonDanceFrameTime: 960
 };
 
 export default config;
