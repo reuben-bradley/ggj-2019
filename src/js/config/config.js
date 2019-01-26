@@ -42,7 +42,13 @@ const config = {
     happinessDecline: -2,
     happinessGrowth: 1,
     minPersonDanceFrameTime: 120,
-    maxPersonDanceFrameTime: 960
+    maxPersonDanceFrameTime: 960,
+    partyPrefs: {
+        heat: ['cold', 'warm', 'hot'],
+        light: ['ambience', 'high'],
+        volume: ['low', 'medium', 'loud'],
+        music: ['pop', 'synthwave']
+    }
 };
 
 export default config;
