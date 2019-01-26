@@ -47,7 +47,7 @@ const config = {
         heat: ['cold', 'warm', 'hot'],
         light: ['ambience', 'high'],
         volume: ['low', 'medium', 'loud'],
-        music: ['pop', 'synthwave']
+        music: ['pop', 'synthwave', 'rock']
     },
     personEnterExitPoint: {
         x: 0,
