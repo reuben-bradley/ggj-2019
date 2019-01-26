@@ -29,13 +29,18 @@ const config = {
             fontFamily: 'Arial',
             fontSize: 24,
             color: 'white'
+        },
+        control: {
+            fontFamily: 'Arial',
+            fontSize: 28,
+            color: 'cyan'
         }
     },
-    partyTickTime: 2000,
+    partyTickTime: 1000,
     newPersonSpawnTime: 6000,
     maxPersons: 10,
     happinessDecline: -2,
-    happinessGrowth: 2
+    happinessGrowth: 1
 };
 
 export default config;

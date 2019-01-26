@@ -1,6 +1,10 @@
 import config from '../config/config';
-import personImg from 'assets/person.png';
+
 import Person from '../actors/Person';
+import Control from '../ui/Control';
+
+import dummyStageImg from 'assets/dummy-stage.png';
+import personImg from 'assets/person.png';
 
 export default class Play extends Phaser.Scene {
   constructor() {
@@ -8,23 +12,72 @@ export default class Play extends Phaser.Scene {
   }
 
   preload() {
-    console.log('Play preload');
+    this.load.image('dummy-stage', dummyStageImg);
     this.load.image('person', personImg);
   }
 
   create() {
-    console.log('Play create', this);
+    this.setupStage();
+    this.setupSpawnLocations();
+    this.setupParty();
+    this.setupControls();
+    this.startTheParty();
+  }
 
+  setupStage = () => {
+    this.stageBg = this.add.image(
+      this.sys.canvas.width * 0.5,
+      this.sys.canvas.height * 0.5,
+      'dummy-stage'
+    );
+    this.stageBg.setScale(0.45);
+  };
+
+  setupSpawnLocations = () => {
+    this.personLocations = [];
+    const xmin = 100;
+    const xmax = 700;
+    const xspace = ((xmax - xmin) / config.maxPersons) >> 0;
+    for (let i = 0; i < config.maxPersons; i++) {
+      const pos = {
+        x: xmin + (xspace * i),
+        y: Phaser.Math.RND.integerInRange(400, 500)
+      }
+      this.personLocations.push(pos);
+    }
+    this.personLocations = Phaser.Utils.Array.Shuffle(this.personLocations);
+  };
+
+  setupParty = () => {
     this.partyState = {
       heat: 0,
       light: 0,
       volume: 0
     };
     this.partyPrefNames = Object.keys(this.partyState);
-
     this.partyPeople = [];
-    this.addNewRandomPerson();
+  };
 
+  setupControls = () => {
+    this.controls = {};
+    this.partyPrefNames.forEach((prefName, idx) => {
+      const ctrl = new Control(
+        this,
+        100 + (idx * 100),
+        550,
+        prefName,
+        this.partyState[prefName],
+        () => {
+          this.partyState[prefName] = this.partyState[prefName] === 0 ? 1 : 0;
+          return this.partyState[prefName];
+        }
+      );
+      this.controls[prefName] = ctrl;
+      this.add.existing(ctrl);
+    });
+  };
+
+  startTheParty = () => {
     this.partyTickTimer = this.time.addEvent({
       delay: config.partyTickTime,
       callback: this.doPartyTic,
@@ -35,8 +88,10 @@ export default class Play extends Phaser.Scene {
       delay: config.newPersonSpawnTime,
       callback: this.addNewRandomPerson,
       loop: true
-    })
-  }
+    });
+
+    this.addNewRandomPerson();
+  };
 
   addNewRandomPerson = () => {
     if (this.partyPeople.length === config.maxPersons) return false;
@@ -44,25 +99,23 @@ export default class Play extends Phaser.Scene {
     const specificPref = Phaser.Utils.Array.GetRandom(this.partyPrefNames);
     const prefValue = Phaser.Math.RND.integerInRange(0, 1);
 
-    this.addPartyPerson({
-        x: Phaser.Math.RND.integerInRange(100, 700),
-        y: Phaser.Math.RND.integerInRange(300, 500)
-      },
+    this.addPartyPerson(
+      this.personLocations.pop(),
       {
         [specificPref]: prefValue
       }
     );
-  }
+  };
 
   addPartyPerson = (startingPos, prefs) => {
     const newPerson = new Person(this, startingPos, prefs);
     this.add.existing(newPerson);
     this.partyPeople.push(newPerson);
-  }
+  };
 
   doPartyTic = () => {
     this.partyPeople.forEach(
       (person) => person.doPartyTic(this.partyState)
     );
-  }
+  };
 }

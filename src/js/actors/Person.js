@@ -16,6 +16,7 @@ class Person extends Phaser.GameObjects.Sprite {
     );
     this.meterText.setOrigin(0.5, 1);
     this.meterText.depth = standingPos.y + 100;
+    this.meterText.setShadow(2, 2, 'black');
     this.displayHappiness();
     scene.add.existing(this.meterText);
   }
@@ -45,8 +46,19 @@ class Person extends Phaser.GameObjects.Sprite {
 
   displayHappiness = () => {
     let adjTxt = '';
-    if (this.prevHappiness < this.happiness) adjTxt = '+';
-    if (this.prevHappiness > this.happiness) adjTxt = '-';
+    let color = 'white';
+
+    if (this.prevHappiness < this.happiness) {
+      adjTxt = '+';
+      color = 'lightgreen';
+    }
+
+    if (this.prevHappiness > this.happiness) {
+      adjTxt = '-';
+      color = 'pink';
+    }
+
+    this.meterText.style.color = color;
     this.meterText.setText(`${this.happiness} ${adjTxt}`);
   }
 
