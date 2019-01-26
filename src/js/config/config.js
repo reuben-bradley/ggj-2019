@@ -24,8 +24,18 @@ const config = {
                 x: 5,
                 y: 1
             }
+        },
+        meter: {
+            fontFamily: 'Arial',
+            fontSize: 24,
+            color: 'white'
         }
-    }
+    },
+    partyTickTime: 2000,
+    newPersonSpawnTime: 6000,
+    maxPersons: 10,
+    happinessDecline: -2,
+    happinessGrowth: 2
 };
 
 export default config;
