@@ -4,7 +4,12 @@ import Person from '../actors/Person';
 import Control from '../ui/control';
 
 import dummyStageImg from 'assets/dummy-stage.png';
-import personImg from 'assets/person.png';
+import danceSprites from 'assets/dance-ss-small-2.png';
+
+import popMp3 from 'assets/audio/pop.mp3';
+import popOpus from 'assets/audio/pop.opus';
+import synthwaveMp3 from 'assets/audio/synthwave.mp3';
+import synthwaveOpus from 'assets/audio/synthwave.opus';
 
 const TINT_BLACK = Phaser.Display.Color.HexStringToColor('0x666666');
 const TINT_RED = Phaser.Display.Color.HexStringToColor('0xffaaaa');
@@ -16,11 +21,29 @@ export default class Play extends Phaser.Scene {
 
   preload() {
     this.load.image('dummy-stage', dummyStageImg);
-    this.load.image('person', personImg);
+    this.load.audio('pop', [popMp3, popOpus]);
+    this.load.audio('synthwave', [synthwaveMp3, synthwaveOpus]);
+    this.load.spritesheet('dance-ss-small', danceSprites, {
+      frameWidth: 104,
+      frameHeight: 160
+    });
+
+    console.log('PLAY', this);
   }
 
   create() {
+    const frames = this.anims.generateFrameNumbers('dance-ss-small');
+    console.log('frames', frames);
+
+    this.anims.create({
+        key: 'dance',
+        frames: 'dance-ss-small',
+        frameRate: 1,
+        repeat: -1
+    });
+
     this.setupStage();
+    this.setupAudio();
     this.setupSpawnLocations();
     this.setupParty();
     this.setupControls();
@@ -79,11 +102,40 @@ export default class Play extends Phaser.Scene {
     this.partyState = {
       heat: 0,
       light: 0,
-      volume: 0
+      volume: 0,
+      music: 'pop'
     };
+
     this.partyPrefNames = Object.keys(this.partyState);
     this.partyPeople = [];
   };
+
+  setupAudio = () => {
+    /* Sets up the audio tracks that can be played in the background.
+     * Trigger changes in the audio playing with changeAudio().
+     */
+    const soundConfig = {
+      mute: false,
+      volume: 1,
+      rate: 1,
+      detune: 0,
+      seek: 0,
+      loop: true,
+      delay: 0
+    }
+    this.iPod = new Map();
+    this.iPod.set('pop', this.sound.add('pop', soundConfig));
+    this.iPod.set('synthwave', this.sound.add('synthwave', soundConfig));
+  }
+
+  changeAudio = (newTrack) => {
+    /* Stops all tracks and plays one defined by newTrack. */
+    for (var track of this.iPod.values()) {
+      track.stop();
+    }
+
+    this.iPod.get(newTrack).play();
+  }
 
   setupControls = () => {
     this.controls = {};
