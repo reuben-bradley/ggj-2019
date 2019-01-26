@@ -43,6 +43,12 @@ const config = {
     happinessGrowth: 1,
     minPersonDanceFrameTime: 120,
     maxPersonDanceFrameTime: 960,
+    partyPrefs: {
+        heat: ['cold', 'warm', 'hot'],
+        light: ['ambience', 'high'],
+        volume: ['low', 'medium', 'loud'],
+        music: ['pop', 'synthwave']
+    },
     personEnterExitPoint: {
         x: 0,
         y: 550
