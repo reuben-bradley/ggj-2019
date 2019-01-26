@@ -4,6 +4,8 @@ class Person extends Phaser.GameObjects.Sprite {
   constructor(scene, standingPos, partyPrefs) {
     super(scene, standingPos.x, standingPos.y, 'person');
 
+    this.anims.play('dance', true);
+
     this.standingPos = standingPos;
     this.depth = standingPos.y;
     this.partyPrefs = partyPrefs;
@@ -41,11 +43,18 @@ class Person extends Phaser.GameObjects.Sprite {
     this.happiness += (happinessDiff < 0) ? happinessDiff : config.happinessGrowth;
     this.happiness = Phaser.Math.Clamp(this.happiness, 0, 100);
     this.displayHappiness();
+    this.updateDanceSpeed();
     this.prevHappiness = this.happiness;
   }
 
+  updateDanceSpeed = () => {
+    this.anims.msPerFrame = config.maxPersonDanceFrameTime - ((
+      config.maxPersonDanceFrameTime - config.minPersonDanceFrameTime
+    ) * this.happiness / 100);
+  }
+
   displayHappiness = () => {
-    let adjTxt = '';
+    let adjTxt = ' ';
     let color = 'white';
 
     if (this.prevHappiness < this.happiness) {
