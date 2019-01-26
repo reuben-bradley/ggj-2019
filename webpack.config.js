@@ -6,13 +6,32 @@ module.exports = {
     entry: {
         game: path.resolve(__dirname, 'src/js/index.js')
     },
+    module: {
+        rules: [
+            {
+                test: /\.(jpg|png|gif)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'assets/'
+                    }
+                }
+            }
+        ]
+    },
+    resolve: {
+        modules: [
+            'node_modules',
+            path.resolve(__dirname, 'src')
+        ]
+    },
     output: {
-        path: path.resolve(__dirname, 'static/js'),
+        path: path.resolve(__dirname, 'static'),
         filename: 'bundle.js'
     },
     devServer: {
         contentBase: path.resolve(__dirname, 'static'),
-        publicPath: '/js/',
+        publicPath: '/',
         host: '0.0.0.0',
         port: 2019
     },
