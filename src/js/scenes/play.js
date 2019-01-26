@@ -8,6 +8,8 @@ import personImg from 'assets/person.png';
 
 import popMp3 from 'assets/audio/pop.mp3';
 import popOpus from 'assets/audio/pop.opus';
+import synthwaveMp3 from 'assets/audio/synthwave.mp3';
+import synthwaveOpus from 'assets/audio/synthwave.opus';
 
 export default class Play extends Phaser.Scene {
   constructor() {
@@ -18,6 +20,7 @@ export default class Play extends Phaser.Scene {
     this.load.image('dummy-stage', dummyStageImg);
     this.load.image('person', personImg);
     this.load.audio('pop', [popMp3, popOpus]);
+    this.load.audio('synthwave', [synthwaveMp3, synthwaveOpus]);
   }
 
   create() {
@@ -66,6 +69,9 @@ export default class Play extends Phaser.Scene {
   };
 
   setupAudio = () => {
+    /* Sets up the audio tracks that can be played in the background.
+     * Trigger changes in the audio playing with changeAudio().
+     */
     const soundConfig = {
       mute: false,
       volume: 1,
@@ -75,16 +81,18 @@ export default class Play extends Phaser.Scene {
       loop: true,
       delay: 0
     }
-    this.iPod = {
-      pop: this.sound.add('pop', soundConfig)
-    }
+    this.iPod = new Map();
+    this.iPod.set('pop', this.sound.add('pop', soundConfig));
+    this.iPod.set('synthwave', this.sound.add('synthwave', soundConfig));
   }
 
-  changeAudio = (track) => {
-    this.iPod.forEach(function(catalogue) {
-      catalogue.stop()
-    });
-    this.iPod.track.play()
+  changeAudio = (newTrack) => {
+    /* Stops all tracks and plays one defined by newTrack. */
+    for (var track of this.iPod.values()) {
+      track.stop();
+    }
+
+    this.iPod.get(newTrack).play();
   }
 
   setupControls = () => {
