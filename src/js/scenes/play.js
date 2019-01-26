@@ -56,7 +56,7 @@ export default class Play extends Phaser.Scene {
 
     this.setupStage();
     this.setupAudio();
-    this.changeAudio('rock');
+    this.changeAudio('pop');
     this.setupSpawnLocations();
     this.setupParty();
     this.setupControls();
@@ -65,6 +65,9 @@ export default class Play extends Phaser.Scene {
 
   onStateChange( prefName, newState ) {
     this.doStageTint();
+    if(prefName == 'music'){
+        this.changeAudio(newState);
+    }
   }
 
   setupStage = () => {
