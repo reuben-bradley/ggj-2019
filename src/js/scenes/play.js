@@ -6,6 +6,9 @@ import Control from '../ui/Control';
 import dummyStageImg from 'assets/dummy-stage.png';
 import personImg from 'assets/person.png';
 
+import popMp3 from 'assets/audio/pop.mp3';
+import popOpus from 'assets/audio/pop.opus';
+
 export default class Play extends Phaser.Scene {
   constructor() {
     super({ key: 'play'});
@@ -14,10 +17,12 @@ export default class Play extends Phaser.Scene {
   preload() {
     this.load.image('dummy-stage', dummyStageImg);
     this.load.image('person', personImg);
+    this.load.audio('pop', [popMp3, popOpus]);
   }
 
   create() {
     this.setupStage();
+    this.setupAudio();
     this.setupSpawnLocations();
     this.setupParty();
     this.setupControls();
@@ -52,11 +57,35 @@ export default class Play extends Phaser.Scene {
     this.partyState = {
       heat: 0,
       light: 0,
-      volume: 0
+      volume: 0,
+      music: 'pop'
     };
+
     this.partyPrefNames = Object.keys(this.partyState);
     this.partyPeople = [];
   };
+
+  setupAudio = () => {
+    const soundConfig = {
+      mute: false,
+      volume: 1,
+      rate: 1,
+      detune: 0,
+      seek: 0,
+      loop: true,
+      delay: 0
+    }
+    this.iPod = {
+      pop: this.sound.add('pop', soundConfig)
+    }
+  }
+
+  changeAudio = (track) => {
+    this.iPod.forEach(function(catalogue) {
+      catalogue.stop()
+    });
+    this.iPod.track.play()
+  }
 
   setupControls = () => {
     this.controls = {};
