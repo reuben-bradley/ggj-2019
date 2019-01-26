@@ -86,7 +86,7 @@ export default class Play extends Phaser.Scene {
   setupSpawnLocations = () => {
     this.personLocations = [];
     const xmin = 100;
-    const xmax = 700;
+    const xmax = 760;
     const xspace = ((xmax - xmin) / config.maxPersons) >> 0;
     for (let i = 0; i < config.maxPersons; i++) {
       const pos = {

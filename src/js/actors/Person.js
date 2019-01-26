@@ -3,9 +3,11 @@ import config from '../config/config';
 class Person extends Phaser.GameObjects.Sprite {
   constructor(scene, standingPos, partyPrefs) {
     super(scene, standingPos.x, standingPos.y, 'person');
-
+    this.setScale(1 - (Math.random() * 0.1));
     this.anims.play('dance', true);
-
+    const tintColor = Math.random() * 0xffffff;
+    this.tintTopLeft = tintColor;
+    this.tintTopRight = tintColor;
     this.standingPos = standingPos;
     this.depth = standingPos.y;
     this.partyPrefs = partyPrefs;
@@ -51,6 +53,8 @@ class Person extends Phaser.GameObjects.Sprite {
     this.anims.msPerFrame = config.maxPersonDanceFrameTime - ((
       config.maxPersonDanceFrameTime - config.minPersonDanceFrameTime
     ) * this.happiness / 100);
+
+    if (Math.random() < 0.2) this.flipX = !this.flipX;
   }
 
   displayHappiness = () => {
