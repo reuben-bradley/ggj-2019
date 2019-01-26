@@ -1,0 +1,6 @@
+server:
+  build: .
+  ports:
+    - 2019:2019
+  volumes:
+    - ./:/www
