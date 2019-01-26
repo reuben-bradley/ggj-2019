@@ -191,6 +191,7 @@ export default class Play extends Phaser.Scene {
     const newPerson = new Person(this, startingPos, prefs);
     this.add.existing(newPerson);
     this.partyPeople.push(newPerson);
+    newPerson.enterParty();
   };
 
   doPartyTic = () => {
@@ -198,4 +199,9 @@ export default class Play extends Phaser.Scene {
       (person) => person.doPartyTic(this.partyState)
     );
   };
+
+  update = () => {
+    super.update();
+    this.partyPeople.forEach((person) => person.update());
+  }
 }

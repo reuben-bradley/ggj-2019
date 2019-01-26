@@ -2,14 +2,22 @@ import config from '../config/config';
 
 class Person extends Phaser.GameObjects.Sprite {
   constructor(scene, standingPos, partyPrefs) {
-    super(scene, standingPos.x, standingPos.y, 'person');
-    this.setScale(1 - (Math.random() * 0.1));
+    super(
+      scene,
+      config.personEnterExitPoint.x,
+      config.personEnterExitPoint.y,
+      null
+    );
+
     this.anims.play('dance', true);
+
     const tintColor = Math.random() * 0xffffff;
     this.tintTopLeft = tintColor;
     this.tintTopRight = tintColor;
+    this.setScale(1 - (Math.random() * 0.1));
+
     this.standingPos = standingPos;
-    this.depth = standingPos.y;
+    this.isDancing = false;
     this.partyPrefs = partyPrefs;
     this.prevHappiness = this.happiness = 50;
 
@@ -19,17 +27,20 @@ class Person extends Phaser.GameObjects.Sprite {
       scene, standingPos.x, standingPos.y - this.height, '', config.textStyles.meter
     );
     this.meterText.setOrigin(0.5, 1);
-    this.meterText.depth = standingPos.y + 100;
     this.meterText.setShadow(2, 2, 'black');
+    this.meterText.visible = false;
     this.displayHappiness();
     scene.add.existing(this.meterText);
   }
 
-  update() {
-    // animate etc
+  update = () => {
+    // TODO: depth sort
+    super.update();
   }
 
   doPartyTic = (partyState) => {
+    if (!this.isDancing) return false;
+
     // compare partyState to prefs, adjust happiness
     let happinessDiff = 0;
 
@@ -75,8 +86,26 @@ class Person extends Phaser.GameObjects.Sprite {
     this.meterText.setText(`${this.happiness} ${adjTxt}`);
   }
 
-  enterParty() {
+  enterParty = () => {
     // spawn at party entrance and move to standingPos
+    console.log('ENTER', this);
+    this.findMySpot = this.scene.tweens.timeline({
+      targets: this,
+      totalDuration: 3000,
+      tweens: [
+        { x: this.standingPos.x },
+        { y: this.standingPos.y }
+      ],
+      onComplete: () => {
+        this.startPartying();
+      }
+    });
+  }
+
+  startPartying() {
+    // TODO: play dance
+    this.meterText.setVisible(true);
+    this.isDancing = true;
   }
 
   leaveParty() {

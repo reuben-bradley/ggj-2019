@@ -42,7 +42,11 @@ const config = {
     happinessDecline: -2,
     happinessGrowth: 1,
     minPersonDanceFrameTime: 120,
-    maxPersonDanceFrameTime: 960
+    maxPersonDanceFrameTime: 960,
+    personEnterExitPoint: {
+        x: 0,
+        y: 550
+    }
 };
 
 export default config;
