@@ -27,7 +27,7 @@ export default class Title extends Phaser.Scene {
 
         this.input.manager.enabled = true;
         this.input.once('pointerdown', () => {
-            this.scene.start('play');
+            this.scene.start('main');
         }, this);
     }
 };

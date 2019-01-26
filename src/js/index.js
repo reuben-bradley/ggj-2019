@@ -5,7 +5,8 @@ import Main from './scenes/main';
 import Play from './scenes/play';
 
 const gameConfig = {
-    type: Phaser.AUTO,
+    type: Phaser.WEBGL,
+    canvas: document.getElementById('gameCanvas'),
     width: config.canvas.width,
     height: config.canvas.height,
     physics: {
