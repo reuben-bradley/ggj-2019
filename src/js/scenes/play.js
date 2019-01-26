@@ -11,6 +11,9 @@ import popOpus from 'assets/audio/pop.opus';
 import synthwaveMp3 from 'assets/audio/synthwave.mp3';
 import synthwaveOpus from 'assets/audio/synthwave.opus';
 
+const TINT_BLACK = Phaser.Display.Color.HexStringToColor('0x666666');
+const TINT_RED = Phaser.Display.Color.HexStringToColor('0xffaaaa');
+
 export default class Play extends Phaser.Scene {
   constructor() {
     super({ key: 'play'});
@@ -47,6 +50,29 @@ export default class Play extends Phaser.Scene {
     this.startTheParty();
   }
 
+  onStateChange( prefName, newState ) {
+    // Tint the stage based on heat and light settings
+    if ( prefName == 'light' || prefName == 'heat' ) {
+      if ( this.partyState['light'] == 1 && this.partyState['heat'] == 0 ) {
+        // Lights on, heat off = no tinting
+        this.stageBg.clearTint();
+      }
+      else if ( this.partyState['light'] == 0 && this.partyState['heat'] == 1 ) {
+        // Lights off, heat on = both tints
+        let tint = new Phaser.Display.Color(TINT_RED.red, TINT_BLACK.green, TINT_BLACK.blue);
+        this.stageBg.setTint(tint.color);
+      }
+      else if ( this.partyState['light'] == 0 ) {
+        // Lights off, heat off = dark tint
+        this.stageBg.setTint(TINT_BLACK.color);
+      }
+      else {
+        // Lights on, heat on = red tint
+        this.stageBg.setTint(TINT_RED.color);
+      }
+    }
+  }
+
   setupStage = () => {
     this.stageBg = this.add.image(
       this.sys.canvas.width * 0.5,
@@ -54,6 +80,7 @@ export default class Play extends Phaser.Scene {
       'dummy-stage'
     );
     this.stageBg.setScale(0.45);
+    this.stageBg.setTint(TINT_BLACK.color);
   };
 
   setupSpawnLocations = () => {
@@ -121,6 +148,7 @@ export default class Play extends Phaser.Scene {
         this.partyState[prefName],
         () => {
           this.partyState[prefName] = this.partyState[prefName] === 0 ? 1 : 0;
+          this.onStateChange(prefName, this.partyState[prefName]);
           return this.partyState[prefName];
         }
       );
