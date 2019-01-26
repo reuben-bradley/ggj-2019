@@ -8,6 +8,8 @@ import danceSprites from 'assets/dance-ss-small-2.png';
 
 import popMp3 from 'assets/audio/pop.mp3';
 import popOpus from 'assets/audio/pop.opus';
+import rockMp3 from 'assets/audio/rock.mp3';
+import rockOpus from 'assets/audio/rock.opus';
 import synthwaveMp3 from 'assets/audio/synthwave.mp3';
 import synthwaveOpus from 'assets/audio/synthwave.opus';
 
@@ -31,6 +33,7 @@ export default class Play extends Phaser.Scene {
   preload() {
     this.load.image('dummy-stage', dummyStageImg);
     this.load.audio('pop', [popMp3, popOpus]);
+    this.load.audio('rock', [rockMp3, rockOpus]);
     this.load.audio('synthwave', [synthwaveMp3, synthwaveOpus]);
     this.load.spritesheet('dance-ss-small', danceSprites, {
       frameWidth: 104,
@@ -53,6 +56,7 @@ export default class Play extends Phaser.Scene {
 
     this.setupStage();
     this.setupAudio();
+    this.changeAudio('rock');
     this.setupSpawnLocations();
     this.setupParty();
     this.setupControls();
@@ -112,6 +116,7 @@ export default class Play extends Phaser.Scene {
     }
     this.iPod = new Map();
     this.iPod.set('pop', this.sound.add('pop', soundConfig));
+    this.iPod.set('rock', this.sound.add('rock', soundConfig));
     this.iPod.set('synthwave', this.sound.add('synthwave', soundConfig));
   }
 
