@@ -142,7 +142,7 @@ export default class Play extends Phaser.Scene {
     this.partyPrefNames.forEach((prefName, idx) => {
       const ctrl = new Control(
         this,
-        100 + (idx * 100),
+        50 + (idx * 180),
         550,
         prefName,
         this.partyState[prefName],
