@@ -36,6 +36,8 @@ class Person extends Phaser.GameObjects.Sprite {
   update = () => {
     // TODO: depth sort
     super.update();
+    if (!this.isAlive) return false;
+    this.depth = this.y;
   }
 
   doPartyTic = (partyState) => {
@@ -58,6 +60,8 @@ class Person extends Phaser.GameObjects.Sprite {
     this.displayHappiness();
     this.updateDanceSpeed();
     this.prevHappiness = this.happiness;
+
+    if (this.happiness === 0 && this.prevHappiness === 0) this.leaveParty();
   }
 
   updateDanceSpeed = () => {
@@ -88,7 +92,6 @@ class Person extends Phaser.GameObjects.Sprite {
 
   enterParty = () => {
     // spawn at party entrance and move to standingPos
-    console.log('ENTER', this);
     this.findMySpot = this.scene.tweens.timeline({
       targets: this,
       totalDuration: 3000,
@@ -110,6 +113,20 @@ class Person extends Phaser.GameObjects.Sprite {
 
   leaveParty() {
     // leave via party entrance
+    this.isDancing = false;
+    this.meterText.setVisible(false);
+
+    this.letsGo = this.scene.tweens.timeline({
+      targets: this,
+      totalDuration: 2000,
+      tweens: [
+        { y: config.personEnterExitPoint.y },
+        { x: config.personEnterExitPoint.x }
+      ],
+      onComplete: () => {
+        this.destroy();
+      }
+    });
   }
 }
 
