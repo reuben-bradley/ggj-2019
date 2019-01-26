@@ -75,7 +75,7 @@ export default class Play extends Phaser.Scene {
   setupSpawnLocations = () => {
     this.personLocations = [];
     const xmin = 100;
-    const xmax = 700;
+    const xmax = 760;
     const xspace = ((xmax - xmin) / config.maxPersons) >> 0;
     for (let i = 0; i < config.maxPersons; i++) {
       const pos = {
@@ -181,6 +181,7 @@ export default class Play extends Phaser.Scene {
     const newPerson = new Person(this, startingPos, prefs);
     this.add.existing(newPerson);
     this.partyPeople.push(newPerson);
+    newPerson.enterParty();
   };
 
   doPartyTic = () => {
@@ -211,4 +212,9 @@ export default class Play extends Phaser.Scene {
     }
     this.stageBg.setTint(resultingTint.color);
   };
+
+  update = () => {
+    super.update();
+    this.partyPeople.forEach((person) => person.update());
+  }
 }

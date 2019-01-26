@@ -48,6 +48,10 @@ const config = {
         light: ['ambience', 'high'],
         volume: ['low', 'medium', 'loud'],
         music: ['pop', 'synthwave']
+    },
+    personEnterExitPoint: {
+        x: 0,
+        y: 550
     }
 };
 
