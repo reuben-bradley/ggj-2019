@@ -1,7 +1,7 @@
 import config from '../config/config';
 
 import Person from '../actors/Person';
-import Control from '../ui/Control';
+import Control from '../ui/control';
 
 import dummyStageImg from 'assets/dummy-stage.png';
 import danceSprites from 'assets/dance-ss-small-2.png';
