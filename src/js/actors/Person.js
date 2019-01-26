@@ -2,12 +2,22 @@ import config from '../config/config';
 
 class Person extends Phaser.GameObjects.Sprite {
   constructor(scene, standingPos, partyPrefs) {
-    super(scene, standingPos.x, standingPos.y, 'person');
+    super(
+      scene,
+      config.personEnterExitPoint.x,
+      config.personEnterExitPoint.y,
+      null
+    );
 
     this.anims.play('dance', true);
 
+    const tintColor = Math.random() * 0xffffff;
+    this.tintTopLeft = tintColor;
+    this.tintTopRight = tintColor;
+    this.setScale(1 - (Math.random() * 0.1));
+
     this.standingPos = standingPos;
-    this.depth = standingPos.y;
+    this.isDancing = false;
     this.partyPrefs = partyPrefs;
     this.prevHappiness = this.happiness = 50;
 
@@ -17,17 +27,22 @@ class Person extends Phaser.GameObjects.Sprite {
       scene, standingPos.x, standingPos.y - this.height, '', config.textStyles.meter
     );
     this.meterText.setOrigin(0.5, 1);
-    this.meterText.depth = standingPos.y + 100;
     this.meterText.setShadow(2, 2, 'black');
+    this.meterText.visible = false;
     this.displayHappiness();
     scene.add.existing(this.meterText);
   }
 
-  update() {
-    // animate etc
+  update = () => {
+    // TODO: depth sort
+    super.update();
+    if (!this.isAlive) return false;
+    this.depth = this.y;
   }
 
   doPartyTic = (partyState) => {
+    if (!this.isDancing) return false;
+
     // compare partyState to prefs, adjust happiness
     let happinessDiff = 0;
 
@@ -45,12 +60,16 @@ class Person extends Phaser.GameObjects.Sprite {
     this.displayHappiness();
     this.updateDanceSpeed();
     this.prevHappiness = this.happiness;
+
+    if (this.happiness === 0 && this.prevHappiness === 0) this.leaveParty();
   }
 
   updateDanceSpeed = () => {
     this.anims.msPerFrame = config.maxPersonDanceFrameTime - ((
       config.maxPersonDanceFrameTime - config.minPersonDanceFrameTime
     ) * this.happiness / 100);
+
+    if (Math.random() < 0.2) this.flipX = !this.flipX;
   }
 
   displayHappiness = () => {
@@ -71,12 +90,43 @@ class Person extends Phaser.GameObjects.Sprite {
     this.meterText.setText(`${this.happiness} ${adjTxt}`);
   }
 
-  enterParty() {
+  enterParty = () => {
     // spawn at party entrance and move to standingPos
+    this.findMySpot = this.scene.tweens.timeline({
+      targets: this,
+      totalDuration: 3000,
+      tweens: [
+        { x: this.standingPos.x },
+        { y: this.standingPos.y }
+      ],
+      onComplete: () => {
+        this.startPartying();
+      }
+    });
+  }
+
+  startPartying() {
+    // TODO: play dance
+    this.meterText.setVisible(true);
+    this.isDancing = true;
   }
 
   leaveParty() {
     // leave via party entrance
+    this.isDancing = false;
+    this.meterText.setVisible(false);
+
+    this.letsGo = this.scene.tweens.timeline({
+      targets: this,
+      totalDuration: 2000,
+      tweens: [
+        { y: config.personEnterExitPoint.y },
+        { x: config.personEnterExitPoint.x }
+      ],
+      onComplete: () => {
+        this.destroy();
+      }
+    });
   }
 }
 

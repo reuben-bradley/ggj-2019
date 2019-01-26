@@ -86,7 +86,7 @@ export default class Play extends Phaser.Scene {
   setupSpawnLocations = () => {
     this.personLocations = [];
     const xmin = 100;
-    const xmax = 700;
+    const xmax = 760;
     const xspace = ((xmax - xmin) / config.maxPersons) >> 0;
     for (let i = 0; i < config.maxPersons; i++) {
       const pos = {
@@ -142,7 +142,7 @@ export default class Play extends Phaser.Scene {
     this.partyPrefNames.forEach((prefName, idx) => {
       const ctrl = new Control(
         this,
-        100 + (idx * 100),
+        50 + (idx * 180),
         550,
         prefName,
         this.partyState[prefName],
@@ -191,6 +191,7 @@ export default class Play extends Phaser.Scene {
     const newPerson = new Person(this, startingPos, prefs);
     this.add.existing(newPerson);
     this.partyPeople.push(newPerson);
+    newPerson.enterParty();
   };
 
   doPartyTic = () => {
@@ -198,4 +199,9 @@ export default class Play extends Phaser.Scene {
       (person) => person.doPartyTic(this.partyState)
     );
   };
+
+  update = () => {
+    super.update();
+    this.partyPeople.forEach((person) => person.update());
+  }
 }
