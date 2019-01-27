@@ -57,11 +57,15 @@ class Person extends Phaser.GameObjects.Sprite {
     // Only grow happiness if all prefs are met
     this.happiness += (happinessDiff < 0) ? happinessDiff : config.happinessGrowth;
     this.happiness = Phaser.Math.Clamp(this.happiness, 0, 100);
+    partyState.cumulativeScore += this.happiness;
     this.displayHappiness();
     this.updateDanceSpeed();
     this.prevHappiness = this.happiness;
 
-    if (this.happiness === 0 && this.prevHappiness === 0) this.leaveParty();
+    if (this.happiness === 0 && this.prevHappiness === 0) {
+      partyState.peopleLost++;
+      this.leaveParty();
+    }
   }
 
   updateDanceSpeed = () => {

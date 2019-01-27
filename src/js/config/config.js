@@ -34,6 +34,15 @@ const config = {
             fontFamily: 'Arial',
             fontSize: 28,
             color: 'cyan'
+        },
+        score: {
+            fontFamily: 'Arial',
+            fontSize: 28,
+            color: '#bb0000',
+            padding: {
+                x: 5,
+                y: 1
+            }
         }
     },
     partyTickTime: 1000,
@@ -48,6 +57,8 @@ const config = {
         volume: ['low', 'medium', 'loud'],
         music: ['pop', 'synthwave', 'rock']
     },
+    partyDuration: 5,
+    partySpeedFactor: 0.05,
     personEnterExitPoint: {
         x: 0,
         y: 550
