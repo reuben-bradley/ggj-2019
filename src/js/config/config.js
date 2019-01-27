@@ -38,7 +38,6 @@ const config = {
     },
     partyTickTime: 1000,
     newPersonSpawnTime: 6000,
-    maxPersons: 10,
     happinessDecline: -2,
     happinessGrowth: 1,
     minPersonDanceFrameTime: 120,
