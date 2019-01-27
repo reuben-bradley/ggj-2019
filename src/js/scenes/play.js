@@ -13,6 +13,28 @@ import rockOpus from 'assets/audio/rock.opus';
 import synthwaveMp3 from 'assets/audio/synthwave.mp3';
 import synthwaveOpus from 'assets/audio/synthwave.opus';
 
+import ambientMp3 from 'assets/audio/ambient.mp3';
+import besttime1Mp3 from 'assets/audio/besttime1.mp3';
+import besttime2Mp3 from 'assets/audio/besttime2.mp3';
+import besttime3Mp3 from 'assets/audio/besttime3.mp3';
+import besttime4Mp3 from 'assets/audio/besttime4.mp3';
+import besttime5Mp3 from 'assets/audio/besttime5.mp3';
+import besttime6Mp3 from 'assets/audio/besttime6.mp3';
+import doorMp3 from 'assets/audio/door.mp3';
+import happy1Mp3 from 'assets/audio/happy1.mp3';
+import happy2Mp3 from 'assets/audio/happy2.mp3';
+import leave1Mp3 from 'assets/audio/leave1.mp3';
+import leave2Mp3 from 'assets/audio/leave2.mp3';
+import leave3Mp3 from 'assets/audio/leave3.mp3';
+import leave4Mp3 from 'assets/audio/leave4.mp3';
+import leave5Mp3 from 'assets/audio/leave5.mp3';
+import leave6Mp3 from 'assets/audio/leave6.mp3';
+import unhappy1Mp3 from 'assets/audio/unhappy1.mp3';
+import unhappy2Mp3 from 'assets/audio/unhappy2.mp3';
+import walkinMp3 from 'assets/audio/walkin.mp3';
+import welcome1Mp3 from 'assets/audio/welcome1.mp3';
+import welcome2Mp3 from 'assets/audio/welcome2.mp3';
+
 const STAGE_TINT_DARK = Phaser.Display.Color.HexStringToColor('0x666666');
 const STAGE_TINT_RED = Phaser.Display.Color.HexStringToColor('0xffaaaa');
 const STAGE_TINT_BLUE = Phaser.Display.Color.HexStringToColor('0xaaaaff');
@@ -32,13 +54,37 @@ export default class Play extends Phaser.Scene {
 
   preload() {
     this.load.image('dummy-stage', dummyStageImg);
+
     this.load.audio('pop', [popMp3, popOpus]);
     this.load.audio('rock', [rockMp3, rockOpus]);
     this.load.audio('synthwave', [synthwaveMp3, synthwaveOpus]);
+
     this.load.spritesheet('dance-ss-small', danceSprites, {
       frameWidth: 104,
       frameHeight: 160
     });
+
+    this.load.audio('ambient', ambientMp3);
+    this.load.audio('besttime1', besttime1Mp3);
+    this.load.audio('besttime2', besttime2Mp3);
+    this.load.audio('besttime3', besttime3Mp3);
+    this.load.audio('besttime4', besttime4Mp3);
+    this.load.audio('besttime5', besttime5Mp3);
+    this.load.audio('besttime6', besttime6Mp3);
+    this.load.audio('door', doorMp3);
+    this.load.audio('happy1', happy1Mp3);
+    this.load.audio('happy2', happy2Mp3);
+    this.load.audio('leave1', leave1Mp3);
+    this.load.audio('leave2', leave2Mp3);
+    this.load.audio('leave3', leave3Mp3);
+    this.load.audio('leave4', leave4Mp3);
+    this.load.audio('leave5', leave5Mp3);
+    this.load.audio('leave6', leave6Mp3);
+    this.load.audio('unhappy1', unhappy1Mp3);
+    this.load.audio('unhappy2', unhappy2Mp3);
+    this.load.audio('walkin', walkinMp3);
+    this.load.audio('welcome1', welcome1Mp3);
+    this.load.audio('welcome2', welcome2Mp3);
 
     console.log('PLAY', this);
   }
@@ -56,7 +102,6 @@ export default class Play extends Phaser.Scene {
 
     this.setupStage();
     this.setupAudio();
-    this.changeAudio('pop');
     this.setupParty();
     this.setupClock();
     this.setupControls();
@@ -66,7 +111,7 @@ export default class Play extends Phaser.Scene {
   onStateChange( prefName, newState ) {
     this.doStageTint();
     if(prefName == 'music'){
-        this.changeAudio(newState);
+        this.changeMusic(newState);
     }
   }
 
@@ -114,9 +159,9 @@ export default class Play extends Phaser.Scene {
 
   setupAudio = () => {
     /* Sets up the audio tracks that can be played in the background.
-     * Trigger changes in the audio playing with changeAudio().
+     * Trigger changes in the audio playing with changeMusic().
      */
-    const soundConfig = {
+    const soundCfgMusic = {
       mute: false,
       volume: 1,
       rate: 1,
@@ -125,19 +170,81 @@ export default class Play extends Phaser.Scene {
       loop: true,
       delay: 0
     }
-    this.iPod = new Map();
-    this.iPod.set('pop', this.sound.add('pop', soundConfig));
-    this.iPod.set('rock', this.sound.add('rock', soundConfig));
-    this.iPod.set('synthwave', this.sound.add('synthwave', soundConfig));
-  }
+    const soundCfgAmbient = {
+      mute: false,
+      volume: 0.85,
+      rate: 1,
+      detune: 0,
+      seek: 0,
+      loop: true,
+      delay: 0
+    }
+    const soundCfgSfx = {
+      mute: false,
+      volume: 1,
+      rate: 1,
+      detune: 0,
+      seek: 0,
+      loop: false,
+      delay: 0
+    }
+    this.gAudio = {};
 
-  changeAudio = (newTrack) => {
+    // Welcome
+    this.gAudio.welcome = [
+      this.sound.add('welcome1', soundCfgSfx),
+      this.sound.add('welcome2', soundCfgSfx)
+    ]
+
+    // Music
+    this.gAudio.music = new Map();
+    this.gAudio.music.set('pop', this.sound.add('pop', soundCfgMusic));
+    this.gAudio.music.set('rock', this.sound.add('rock', soundCfgMusic));
+    this.gAudio.music.set('synthwave', this.sound.add('synthwave', soundCfgMusic));
+
+    // Ambient (looped)
+    this.gAudio.ambient = this.sound.add('ambient', soundCfgAmbient);
+
+    // Walkin/Door SFX
+    this.gAudio.walkin = this.sound.add('walkin', soundCfgSfx);
+    this.gAudio.door = this.sound.add('door', soundCfgSfx);
+
+    // Happy/unhappy SFX
+    this.gAudio.happy = [
+      this.sound.add('happy1', soundCfgSfx),
+      this.sound.add('happy2', soundCfgSfx)
+    ]
+    this.gAudio.unhappy = [
+      this.sound.add('unhappy1', soundCfgSfx),
+      this.sound.add('unhappy2', soundCfgSfx)
+    ]
+
+    // Besttime/leave SFX
+    this.gAudio.besttime = [
+      this.sound.add('besttime1', soundCfgSfx),
+      this.sound.add('besttime2', soundCfgSfx),
+      this.sound.add('besttime3', soundCfgSfx),
+      this.sound.add('besttime4', soundCfgSfx),
+      this.sound.add('besttime5', soundCfgSfx),
+      this.sound.add('besttime6', soundCfgSfx)
+    ]
+    this.gAudio.leave = [
+      this.sound.add('leave1', soundCfgSfx),
+      this.sound.add('leave2', soundCfgSfx),
+      this.sound.add('leave3', soundCfgSfx),
+      this.sound.add('leave4', soundCfgSfx),
+      this.sound.add('leave5', soundCfgSfx),
+      this.sound.add('leave6', soundCfgSfx)
+    ]
+  };
+
+  changeMusic = (newTrack) => {
     /* Stops all tracks and plays one defined by newTrack. */
-    for (var track of this.iPod.values()) {
+    for (var track of this.gAudio.music.values()) {
       track.stop();
     }
 
-    this.iPod.get(newTrack).play();
+    this.gAudio.music.get(newTrack).play();
   }
 
   setupControls = () => {
@@ -177,6 +284,7 @@ export default class Play extends Phaser.Scene {
     });
 
     this.addNewRandomPerson();
+    this.changeMusic('pop');
   };
 
   stopTheParty = () => {
