@@ -194,7 +194,7 @@ export default class Play extends Phaser.Scene {
     }
     this.gAudio = {};
 
-    // Welcome
+    // TODO: Welcome
     this.gAudio.welcome = [
       this.sound.add('welcome1', soundCfgSfx),
       this.sound.add('welcome2', soundCfgSfx)
@@ -207,13 +207,15 @@ export default class Play extends Phaser.Scene {
     this.gAudio.music.set('synthwave', this.sound.add('synthwave', soundCfgMusic));
 
     // Ambient (looped)
+    // TODO: change volume based on number
     this.gAudio.ambient = this.sound.add('ambient', soundCfgAmbient);
 
     // Walkin/Door SFX
+    // TODO: Leave sfx when player leaves
     this.gAudio.walkin = this.sound.add('walkin', soundCfgSfx);
     this.gAudio.door = this.sound.add('door', soundCfgSfx);
 
-    // Happy/unhappy SFX
+    // TODO: Happy/unhappy SFX
     this.gAudio.happy = [
       this.sound.add('happy1', soundCfgSfx),
       this.sound.add('happy2', soundCfgSfx)
@@ -223,7 +225,7 @@ export default class Play extends Phaser.Scene {
       this.sound.add('unhappy2', soundCfgSfx)
     ]
 
-    // Besttime/leave SFX
+    // TODO: Besttime/leave SFX
     this.gAudio.besttime = [
       this.sound.add('besttime1', soundCfgSfx),
       this.sound.add('besttime2', soundCfgSfx),
