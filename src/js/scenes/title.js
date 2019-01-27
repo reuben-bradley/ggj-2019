@@ -22,7 +22,7 @@ export default class Title extends Phaser.Scene {
             },
             active: () => {
                 this.add.image(config.canvas.width / 2, config.canvas.height / 2, 'logo');
-                const prompt = this.add.text(400, 400, 'Press any key to continue', config.textStyles.default);
+                const prompt = this.add.text(400, 400, 'Click to continue', config.textStyles.default);
                 prompt.setOrigin(0.5);
             }
         });
