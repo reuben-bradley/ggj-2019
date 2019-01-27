@@ -56,6 +56,7 @@ export default class Play extends Phaser.Scene {
   preload() {
     this.load.image('dummy-stage', dummyStageImg);
     this.load.image('host', hostSprite);
+
     this.load.audio('pop', [popMp3, popOpus]);
     this.load.audio('rock', [rockMp3, rockOpus]);
     this.load.audio('synthwave', [synthwaveMp3, synthwaveOpus]);
