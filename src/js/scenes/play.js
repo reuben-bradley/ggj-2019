@@ -361,8 +361,10 @@ export default class Play extends Phaser.Scene {
       }
 
       // Calculate final scores
+      const peepsLeft = this.partyPeople.length - this.partyState.peopleLost;
+
       const finalScore = 'Final Score: ' + this.partyState.cumulativeScore;
-      const finalCount = 'Final Count: ' + this.partyPeople.length;
+      const finalCount = 'Final Count: ' + peepsLeft;
 
       // Game over text
       let txGameOver1 = this.add.text(200, 100, 'Party Over!', Object.assign({color: '#00bb00'}, config.textStyles.gameover));
