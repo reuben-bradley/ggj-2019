@@ -173,14 +173,17 @@ export default class Play extends Phaser.Scene {
   addNewRandomPerson = () => {
     if (this.partyPeople.length === config.maxPersons) return false;
 
-    const specificPref = Phaser.Utils.Array.GetRandom(this.partyPrefNames);
-    const prefValue = config.partyPrefs[specificPref][Phaser.Math.RND.integerInRange(0, config.partyPrefs[specificPref].length)];
+    var prefs = {};
+
+    this.partyPrefNames.forEach(function(pref) {
+      const prefValue = config.partyPrefs[pref][Phaser.Math.RND.integerInRange(0, config.partyPrefs[pref].length)];
+
+      prefs[pref] = prefValue;
+    });
 
     this.addPartyPerson(
       this.personLocations.pop(),
-      {
-        [specificPref]: prefValue
-      }
+      prefs
     );
   };
 
