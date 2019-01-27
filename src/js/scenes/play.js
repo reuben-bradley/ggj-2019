@@ -285,6 +285,7 @@ export default class Play extends Phaser.Scene {
 
     this.addNewRandomPerson();
     this.changeMusic('pop');
+    this.gAudio.ambient.play();
   };
 
   stopTheParty = () => {
