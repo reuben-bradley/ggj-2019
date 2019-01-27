@@ -188,6 +188,182 @@ eval("var g; // This works in non-strict mode\n\ng = function () {\n  return thi
 
 /***/ }),
 
+/***/ "./src/assets/audio/ambient.mp3":
+/*!**************************************!*\
+  !*** ./src/assets/audio/ambient.mp3 ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/5c529a8ba62e3f2c3991ba25c5c8e967.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/ambient.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/besttime1.mp3":
+/*!****************************************!*\
+  !*** ./src/assets/audio/besttime1.mp3 ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/a5e79bfe2ed795659ed88bc8325c6178.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/besttime1.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/besttime2.mp3":
+/*!****************************************!*\
+  !*** ./src/assets/audio/besttime2.mp3 ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/173c9bab0d86e1d3c4fdb967d5bf3ac3.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/besttime2.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/besttime3.mp3":
+/*!****************************************!*\
+  !*** ./src/assets/audio/besttime3.mp3 ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/3fbe624e944886c72156dc85464d5b6b.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/besttime3.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/besttime4.mp3":
+/*!****************************************!*\
+  !*** ./src/assets/audio/besttime4.mp3 ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/6aa4d51c8de6d16d350eccc5949b2e36.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/besttime4.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/besttime5.mp3":
+/*!****************************************!*\
+  !*** ./src/assets/audio/besttime5.mp3 ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/33f89bb7ec2d425a05853fe23f47b3aa.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/besttime5.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/besttime6.mp3":
+/*!****************************************!*\
+  !*** ./src/assets/audio/besttime6.mp3 ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/79d2198d9f9e2357b867310a356d7099.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/besttime6.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/door.mp3":
+/*!***********************************!*\
+  !*** ./src/assets/audio/door.mp3 ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/5c529a8ba62e3f2c3991ba25c5c8e967.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/door.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/happy1.mp3":
+/*!*************************************!*\
+  !*** ./src/assets/audio/happy1.mp3 ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/901ef3e1529eb6345835a2f41661f51b.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/happy1.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/happy2.mp3":
+/*!*************************************!*\
+  !*** ./src/assets/audio/happy2.mp3 ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/103ac7c2e237bff4654b9df5ffc8444d.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/happy2.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/leave1.mp3":
+/*!*************************************!*\
+  !*** ./src/assets/audio/leave1.mp3 ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/5db83038378d4fb22f7a2b6e517347dd.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/leave1.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/leave2.mp3":
+/*!*************************************!*\
+  !*** ./src/assets/audio/leave2.mp3 ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/3c99fa5d7d331315c5c19f84ef0501ac.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/leave2.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/leave3.mp3":
+/*!*************************************!*\
+  !*** ./src/assets/audio/leave3.mp3 ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/567bfb86dbfae2adfc5dec19913d65c8.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/leave3.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/leave4.mp3":
+/*!*************************************!*\
+  !*** ./src/assets/audio/leave4.mp3 ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/7294a1bf3353fa0d8181881ab29ef683.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/leave4.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/leave5.mp3":
+/*!*************************************!*\
+  !*** ./src/assets/audio/leave5.mp3 ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/b01707ffb532ce2ab115608b60bef5d2.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/leave5.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/leave6.mp3":
+/*!*************************************!*\
+  !*** ./src/assets/audio/leave6.mp3 ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/ed6aeafabb65f7e1d3898fa87b102648.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/leave6.mp3?");
+
+/***/ }),
+
 /***/ "./src/assets/audio/pop.mp3":
 /*!**********************************!*\
   !*** ./src/assets/audio/pop.mp3 ***!
@@ -195,7 +371,7 @@ eval("var g; // This works in non-strict mode\n\ng = function () {\n  return thi
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"assets/f232e1db84ae125b49a1b99e51c779b8.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/pop.mp3?");
+eval("module.exports = __webpack_require__.p + \"assets/8407a7e43ae33c1da63be8c463985c28.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/pop.mp3?");
 
 /***/ }),
 
@@ -206,7 +382,7 @@ eval("module.exports = __webpack_require__.p + \"assets/f232e1db84ae125b49a1b99e
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"assets/df56e759aafa9f3ff797681e41a34c31.opus\";\n\n//# sourceURL=webpack:///./src/assets/audio/pop.opus?");
+eval("module.exports = __webpack_require__.p + \"assets/f858f19eaf41646674d0516a62facda7.opus\";\n\n//# sourceURL=webpack:///./src/assets/audio/pop.opus?");
 
 /***/ }),
 
@@ -217,7 +393,7 @@ eval("module.exports = __webpack_require__.p + \"assets/df56e759aafa9f3ff797681e
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"assets/3ec426b3db2cb3c8768ffcdc93f17979.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/rock.mp3?");
+eval("module.exports = __webpack_require__.p + \"assets/9caadd6e138a75bf4d61c81e7aaa98b8.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/rock.mp3?");
 
 /***/ }),
 
@@ -228,7 +404,7 @@ eval("module.exports = __webpack_require__.p + \"assets/3ec426b3db2cb3c8768ffcdc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"assets/ed78000821ae19b3fa237a37d2b8f36f.opus\";\n\n//# sourceURL=webpack:///./src/assets/audio/rock.opus?");
+eval("module.exports = __webpack_require__.p + \"assets/cb713c7f1080620f2ffbcb5d606116f0.opus\";\n\n//# sourceURL=webpack:///./src/assets/audio/rock.opus?");
 
 /***/ }),
 
@@ -239,7 +415,7 @@ eval("module.exports = __webpack_require__.p + \"assets/ed78000821ae19b3fa237a37
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"assets/ccbae595f2c0ca88eacf0127be918697.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/synthwave.mp3?");
+eval("module.exports = __webpack_require__.p + \"assets/a1f55d815419bb14a966753c468affb1.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/synthwave.mp3?");
 
 /***/ }),
 
@@ -250,7 +426,62 @@ eval("module.exports = __webpack_require__.p + \"assets/ccbae595f2c0ca88eacf0127
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"assets/a9819a118df331d29b94f54f815ae6ce.opus\";\n\n//# sourceURL=webpack:///./src/assets/audio/synthwave.opus?");
+eval("module.exports = __webpack_require__.p + \"assets/4ad4d79ee07eb6b5cdf45cb91ba1ae09.opus\";\n\n//# sourceURL=webpack:///./src/assets/audio/synthwave.opus?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/unhappy1.mp3":
+/*!***************************************!*\
+  !*** ./src/assets/audio/unhappy1.mp3 ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/e382c4ade5a05a596fe1b4ebcf4124fb.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/unhappy1.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/unhappy2.mp3":
+/*!***************************************!*\
+  !*** ./src/assets/audio/unhappy2.mp3 ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/ac9601f8b0258503f8a851b18d5f11c8.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/unhappy2.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/walkin.mp3":
+/*!*************************************!*\
+  !*** ./src/assets/audio/walkin.mp3 ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/c286b85c2d3c8511fda91dc41ab12fa4.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/walkin.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/welcome1.mp3":
+/*!***************************************!*\
+  !*** ./src/assets/audio/welcome1.mp3 ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/1ddce13f10b6fe08c784eff9187a75bf.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/welcome1.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/audio/welcome2.mp3":
+/*!***************************************!*\
+  !*** ./src/assets/audio/welcome2.mp3 ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/d3ed6412ec88556368b49c9a1d060d4f.mp3\";\n\n//# sourceURL=webpack:///./src/assets/audio/welcome2.mp3?");
 
 /***/ }),
 
@@ -272,7 +503,29 @@ eval("module.exports = __webpack_require__.p + \"assets/c0f56e0098cf4329fc73349a
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"assets/b2bd6c17597f094421b142a210abe2ef.png\";\n\n//# sourceURL=webpack:///./src/assets/dummy-stage.png?");
+eval("module.exports = __webpack_require__.p + \"assets/f538975984e4e2b5803e55d42c98f48b.png\";\n\n//# sourceURL=webpack:///./src/assets/dummy-stage.png?");
+
+/***/ }),
+
+/***/ "./src/assets/host.png":
+/*!*****************************!*\
+  !*** ./src/assets/host.png ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/6f3ed5af52aa07c306a259bc7a652af3.png\";\n\n//# sourceURL=webpack:///./src/assets/host.png?");
+
+/***/ }),
+
+/***/ "./src/assets/title-logo.png":
+/*!***********************************!*\
+  !*** ./src/assets/title-logo.png ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"assets/35b063c2dce7cc9d70adad1bf6f903f8.png\";\n\n//# sourceURL=webpack:///./src/assets/title-logo.png?");
 
 /***/ }),
 
@@ -284,7 +537,7 @@ eval("module.exports = __webpack_require__.p + \"assets/b2bd6c17597f094421b142a2
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../config/config */ \"./src/js/config/config.js\");\n\n\nclass Person extends Phaser.GameObjects.Sprite {\n  constructor(scene, standingPos, partyPrefs) {\n    super(scene, _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].personEnterExitPoint.x, _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].personEnterExitPoint.y, null);\n\n    this.update = () => {\n      // TODO: depth sort\n      super.update();\n      if (!this.isAlive) return false;\n      this.depth = this.y;\n    };\n\n    this.doPartyTic = partyState => {\n      if (!this.isDancing) return false; // compare partyState to prefs, adjust happiness\n\n      let happinessDiff = 0;\n\n      for (const pref in this.partyPrefs) {\n        const prefVal = this.partyPrefs[pref];\n        const partyVal = partyState[pref]; // Reduce happiness for each unmet pref\n\n        if (partyVal !== prefVal) {\n          happinessDiff += _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].happinessDecline;\n        }\n      } // Only grow happiness if all prefs are met\n\n\n      this.happiness += happinessDiff < 0 ? happinessDiff : _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].happinessGrowth;\n      this.happiness = Phaser.Math.Clamp(this.happiness, 0, 100);\n      this.displayHappiness();\n      this.updateDanceSpeed();\n      this.prevHappiness = this.happiness;\n      if (this.happiness === 0 && this.prevHappiness === 0) this.leaveParty();\n    };\n\n    this.updateDanceSpeed = () => {\n      this.anims.msPerFrame = _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].maxPersonDanceFrameTime - (_config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].maxPersonDanceFrameTime - _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].minPersonDanceFrameTime) * this.happiness / 100;\n      if (Math.random() < 0.2) this.flipX = !this.flipX;\n    };\n\n    this.displayHappiness = () => {\n      let adjTxt = ' ';\n      let color = 'white';\n\n      if (this.prevHappiness < this.happiness) {\n        adjTxt = '+';\n        color = 'lightgreen';\n      }\n\n      if (this.prevHappiness > this.happiness) {\n        adjTxt = '-';\n        color = 'pink';\n      }\n\n      this.meterText.style.color = color;\n      this.meterText.setText(`${this.happiness} ${adjTxt}`);\n    };\n\n    this.enterParty = () => {\n      // spawn at party entrance and move to standingPos\n      this.findMySpot = this.scene.tweens.timeline({\n        targets: this,\n        totalDuration: 3000,\n        tweens: [{\n          x: this.standingPos.x\n        }, {\n          y: this.standingPos.y\n        }],\n        onComplete: () => {\n          this.startPartying();\n        }\n      });\n    };\n\n    this.anims.play('dance', true);\n    const tintColor = Math.random() * 0xffffff;\n    this.tintTopLeft = tintColor;\n    this.tintTopRight = tintColor;\n    this.setScale(1 - Math.random() * 0.1);\n    this.standingPos = standingPos;\n    this.isDancing = false;\n    this.partyPrefs = partyPrefs;\n    this.prevHappiness = this.happiness = 50; // Add meter\n\n    this.setOrigin(0.5, 1);\n    this.meterText = new Phaser.GameObjects.Text(scene, standingPos.x, standingPos.y - this.height, '', _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].textStyles.meter);\n    this.meterText.setOrigin(0.5, 1);\n    this.meterText.setShadow(2, 2, 'black');\n    this.meterText.visible = false;\n    this.displayHappiness();\n    scene.add.existing(this.meterText);\n  }\n\n  startPartying() {\n    // TODO: play dance\n    this.meterText.setVisible(true);\n    this.isDancing = true;\n  }\n\n  leaveParty() {\n    // leave via party entrance\n    this.isDancing = false;\n    this.meterText.setVisible(false);\n    this.letsGo = this.scene.tweens.timeline({\n      targets: this,\n      totalDuration: 2000,\n      tweens: [{\n        y: _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].personEnterExitPoint.y\n      }, {\n        x: _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].personEnterExitPoint.x\n      }],\n      onComplete: () => {\n        this.destroy();\n      }\n    });\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Person);\n\n//# sourceURL=webpack:///./src/js/actors/Person.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../config/config */ \"./src/js/config/config.js\");\n\n\nclass Person extends Phaser.GameObjects.Sprite {\n  constructor(scene, standingPos, partyPrefs) {\n    super(scene, _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].personEnterExitPoint.x, _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].personEnterExitPoint.y, null);\n\n    this.update = () => {\n      // TODO: depth sort\n      super.update();\n      if (!this.isAlive) return false;\n      this.depth = this.y;\n    };\n\n    this.doPartyTic = partyState => {\n      if (!this.isDancing) return false; // compare partyState to prefs, adjust happiness\n\n      let happinessDiff = 0;\n\n      for (const pref in this.partyPrefs) {\n        const prefVal = this.partyPrefs[pref];\n        const partyVal = partyState[pref]; // Reduce happiness for each unmet pref\n\n        if (partyVal !== prefVal) {\n          happinessDiff += _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].happinessDecline;\n        }\n      } // Only grow happiness if all prefs are met\n\n\n      this.happiness += happinessDiff < 0 ? happinessDiff : _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].happinessGrowth;\n      this.happiness = Phaser.Math.Clamp(this.happiness, 0, 100);\n      partyState.cumulativeScore += this.happiness;\n      this.displayHappiness();\n      this.updateDanceSpeed();\n      this.prevHappiness = this.happiness;\n\n      if (this.happiness === 0 && this.prevHappiness === 0) {\n        partyState.peopleLost++;\n        this.leaveParty();\n      }\n    };\n\n    this.updateDanceSpeed = () => {\n      this.anims.msPerFrame = _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].maxPersonDanceFrameTime - (_config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].maxPersonDanceFrameTime - _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].minPersonDanceFrameTime) * this.happiness / 100;\n      if (Math.random() < 0.2) this.flipX = !this.flipX;\n    };\n\n    this.displayHappiness = () => {\n      let adjTxt = ' ';\n      let color = 'white';\n\n      if (this.prevHappiness < this.happiness) {\n        adjTxt = '+';\n        color = 'lightgreen';\n      }\n\n      if (this.prevHappiness > this.happiness) {\n        adjTxt = '-';\n        color = 'pink';\n      }\n\n      this.meterText.style.color = color;\n      this.meterText.setText(`${this.happiness} ${adjTxt}`);\n    };\n\n    this.enterParty = () => {\n      // spawn at party entrance and move to standingPos\n      this.findMySpot = this.scene.tweens.timeline({\n        targets: this,\n        totalDuration: 3000,\n        tweens: [{\n          x: this.standingPos.x\n        }, {\n          y: this.standingPos.y\n        }],\n        onComplete: () => {\n          this.startPartying();\n        }\n      });\n    };\n\n    this.anims.play('dance', true);\n    const tintColor = Math.random() * 0xffffff;\n    this.tintTopLeft = tintColor;\n    this.tintTopRight = tintColor;\n    this.setScale(1 - Math.random() * 0.1);\n    this.standingPos = standingPos;\n    this.isDancing = false;\n    this.partyPrefs = partyPrefs;\n    this.prevHappiness = this.happiness = 50; // Add meter\n\n    this.setOrigin(0.5, 1);\n    this.meterText = new Phaser.GameObjects.Text(scene, standingPos.x, standingPos.y - this.height, '', _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].textStyles.meter);\n    this.meterText.setOrigin(0.5, 1);\n    this.meterText.setShadow(2, 2, 'black');\n    this.meterText.visible = false;\n    this.displayHappiness();\n    scene.add.existing(this.meterText);\n  }\n\n  startPartying() {\n    // TODO: play dance\n    this.meterText.setVisible(true);\n    this.isDancing = true;\n  }\n\n  leaveParty() {\n    // leave via party entrance\n    this.isDancing = false;\n    this.meterText.setVisible(false);\n    this.letsGo = this.scene.tweens.timeline({\n      targets: this,\n      totalDuration: 2000,\n      tweens: [{\n        y: _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].personEnterExitPoint.y\n      }, {\n        x: _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].personEnterExitPoint.x\n      }],\n      onComplete: () => {\n        this.destroy();\n      }\n    });\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Person);\n\n//# sourceURL=webpack:///./src/js/actors/Person.js?");
 
 /***/ }),
 
@@ -296,7 +549,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _con
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! phaser */ \"./node_modules/phaser/src/phaser.js\");\n/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(phaser__WEBPACK_IMPORTED_MODULE_0__);\n\nconst config = {\n  canvas: {\n    height: 600,\n    width: 800\n  },\n  textStyles: {\n    default: {\n      fontFamily: 'Bangers',\n      fontSize: 16,\n      color: '#bb0000',\n      padding: {\n        x: 5,\n        y: 1\n      }\n    },\n    title: {\n      fontFamily: 'Cinzel Decorative',\n      fontSize: 42,\n      fontWeight: 900,\n      color: '#00bb00',\n      padding: {\n        x: 5,\n        y: 1\n      }\n    },\n    meter: {\n      fontFamily: 'Arial',\n      fontSize: 24,\n      color: 'white'\n    },\n    control: {\n      fontFamily: 'Arial',\n      fontSize: 28,\n      color: 'cyan'\n    }\n  },\n  partyTickTime: 1000,\n  newPersonSpawnTime: 6000,\n  maxPersons: 10,\n  happinessDecline: -2,\n  happinessGrowth: 1,\n  minPersonDanceFrameTime: 120,\n  maxPersonDanceFrameTime: 960,\n  partyPrefs: {\n    heat: ['cold', 'warm', 'hot'],\n    light: ['ambience', 'high'],\n    volume: ['low', 'medium', 'loud'],\n    music: ['pop', 'synthwave', 'rock']\n  },\n  personEnterExitPoint: {\n    x: 0,\n    y: 550\n  }\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (config);\n\n//# sourceURL=webpack:///./src/js/config/config.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! phaser */ \"./node_modules/phaser/src/phaser.js\");\n/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(phaser__WEBPACK_IMPORTED_MODULE_0__);\n\nconst config = {\n  canvas: {\n    height: 600,\n    width: 800\n  },\n  textStyles: {\n    default: {\n      fontFamily: 'Bangers',\n      fontSize: 16,\n      color: '#bb0000',\n      padding: {\n        x: 5,\n        y: 1\n      }\n    },\n    meter: {\n      fontFamily: 'Arial',\n      fontSize: 24,\n      color: 'white'\n    },\n    control: {\n      fontFamily: 'Arial',\n      fontSize: 28,\n      color: 'cyan'\n    },\n    score: {\n      fontFamily: 'Montserrat',\n      fontSize: 28,\n      color: '#bb0000',\n      padding: {\n        x: 5,\n        y: 1\n      }\n    }\n  },\n  partyTickTime: 1000,\n  newPersonSpawnTime: 6000,\n  happinessDecline: -2,\n  happinessGrowth: 1,\n  minPersonDanceFrameTime: 120,\n  maxPersonDanceFrameTime: 960,\n  partyPrefs: {\n    heat: ['cold', 'warm', 'hot'],\n    light: ['ambience', 'high'],\n    volume: ['low', 'medium', 'loud'],\n    music: ['pop', 'synthwave', 'rock']\n  },\n  partyDuration: 5,\n  partySpeedFactor: 0.05,\n  personEnterExitPoint: {\n    x: 0,\n    y: 550\n  }\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (config);\n\n//# sourceURL=webpack:///./src/js/config/config.js?");
 
 /***/ }),
 
@@ -308,19 +561,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var phas
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! phaser */ \"./node_modules/phaser/src/phaser.js\");\n/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(phaser__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./config/config */ \"./src/js/config/config.js\");\n/* harmony import */ var _scenes_title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scenes/title */ \"./src/js/scenes/title.js\");\n/* harmony import */ var _scenes_main__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scenes/main */ \"./src/js/scenes/main.js\");\n/* harmony import */ var _scenes_play__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scenes/play */ \"./src/js/scenes/play.js\");\n\n\n\n\n\nconst gameConfig = {\n  type: Phaser.AUTO,\n  width: _config_config__WEBPACK_IMPORTED_MODULE_1__[\"default\"].canvas.width,\n  height: _config_config__WEBPACK_IMPORTED_MODULE_1__[\"default\"].canvas.height,\n  physics: {\n    default: 'arcade',\n    arcade: {\n      gravity: {\n        y: 200\n      }\n    }\n  },\n  scene: [_scenes_play__WEBPACK_IMPORTED_MODULE_4__[\"default\"]]\n};\nconst game = new Phaser.Game(gameConfig);\n\n//# sourceURL=webpack:///./src/js/index.js?");
-
-/***/ }),
-
-/***/ "./src/js/scenes/main.js":
-/*!*******************************!*\
-  !*** ./src/js/scenes/main.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Main; });\n/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../config/config */ \"./src/js/config/config.js\");\n\nclass Main extends Phaser.Scene {\n  constructor() {\n    super({\n      key: 'main'\n    });\n  }\n\n  preload() {// Load necessary tiles and sprites\n  }\n\n  create() {}\n\n  update() {}\n\n}\n;\n\n//# sourceURL=webpack:///./src/js/scenes/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! phaser */ \"./node_modules/phaser/src/phaser.js\");\n/* harmony import */ var phaser__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(phaser__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./config/config */ \"./src/js/config/config.js\");\n/* harmony import */ var _scenes_title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scenes/title */ \"./src/js/scenes/title.js\");\n/* harmony import */ var _scenes_play__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scenes/play */ \"./src/js/scenes/play.js\");\n\n\n\n\nconst gameConfig = {\n  type: Phaser.AUTO,\n  width: _config_config__WEBPACK_IMPORTED_MODULE_1__[\"default\"].canvas.width,\n  height: _config_config__WEBPACK_IMPORTED_MODULE_1__[\"default\"].canvas.height,\n  physics: {\n    default: 'arcade',\n    arcade: {\n      gravity: {\n        y: 200\n      }\n    }\n  },\n  scene: [_scenes_title__WEBPACK_IMPORTED_MODULE_2__[\"default\"], _scenes_play__WEBPACK_IMPORTED_MODULE_3__[\"default\"]]\n};\nconst game = new Phaser.Game(gameConfig);\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
@@ -332,7 +573,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Play; });\n/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../config/config */ \"./src/js/config/config.js\");\n/* harmony import */ var _actors_Person__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../actors/Person */ \"./src/js/actors/Person.js\");\n/* harmony import */ var _ui_control__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/control */ \"./src/js/ui/control.js\");\n/* harmony import */ var assets_dummy_stage_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! assets/dummy-stage.png */ \"./src/assets/dummy-stage.png\");\n/* harmony import */ var assets_dummy_stage_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(assets_dummy_stage_png__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var assets_dance_ss_small_2_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! assets/dance-ss-small-2.png */ \"./src/assets/dance-ss-small-2.png\");\n/* harmony import */ var assets_dance_ss_small_2_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(assets_dance_ss_small_2_png__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var assets_audio_pop_mp3__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! assets/audio/pop.mp3 */ \"./src/assets/audio/pop.mp3\");\n/* harmony import */ var assets_audio_pop_mp3__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(assets_audio_pop_mp3__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var assets_audio_pop_opus__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! assets/audio/pop.opus */ \"./src/assets/audio/pop.opus\");\n/* harmony import */ var assets_audio_pop_opus__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(assets_audio_pop_opus__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var assets_audio_rock_mp3__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! assets/audio/rock.mp3 */ \"./src/assets/audio/rock.mp3\");\n/* harmony import */ var assets_audio_rock_mp3__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(assets_audio_rock_mp3__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var assets_audio_rock_opus__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! assets/audio/rock.opus */ \"./src/assets/audio/rock.opus\");\n/* harmony import */ var assets_audio_rock_opus__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(assets_audio_rock_opus__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var assets_audio_synthwave_mp3__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! assets/audio/synthwave.mp3 */ \"./src/assets/audio/synthwave.mp3\");\n/* harmony import */ var assets_audio_synthwave_mp3__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(assets_audio_synthwave_mp3__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var assets_audio_synthwave_opus__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! assets/audio/synthwave.opus */ \"./src/assets/audio/synthwave.opus\");\n/* harmony import */ var assets_audio_synthwave_opus__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(assets_audio_synthwave_opus__WEBPACK_IMPORTED_MODULE_10__);\n\n\n\n\n\n\n\n\n\n\n\nconst TINT_BLACK = Phaser.Display.Color.HexStringToColor('0x666666');\nconst TINT_RED = Phaser.Display.Color.HexStringToColor('0xffaaaa');\nconst TINT_BLUE = Phaser.Display.Color.HexStringToColor('0xaaaaff');\nconst TINT_PURPLE = Phaser.Display.Color.HexStringToColor('0xff99ff');\n\nconst mergeColors = (color1, color2) => {\n  let r = Math.floor(Math.abs(color1.red - color2.red) / 2) + Math.min(color1.red, color2.red);\n  let g = Math.floor(Math.abs(color1.green - color2.green) / 2) + Math.min(color1.green, color2.green);\n  let b = Math.floor(Math.abs(color1.blue - color2.blue) / 2) + Math.min(color1.blue, color2.blue);\n  return new Phaser.Display.Color(r, g, b);\n};\n\nclass Play extends Phaser.Scene {\n  constructor() {\n    super({\n      key: 'play'\n    });\n\n    this.setupStage = () => {\n      this.stageBg = this.add.image(this.sys.canvas.width * 0.5, this.sys.canvas.height * 0.5, 'dummy-stage');\n      this.stageBg.setScale(0.45);\n    };\n\n    this.setupSpawnLocations = () => {\n      this.personLocations = [];\n      const xmin = 100;\n      const xmax = 760;\n      const xspace = (xmax - xmin) / _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].maxPersons >> 0;\n\n      for (let i = 0; i < _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].maxPersons; i++) {\n        const pos = {\n          x: xmin + xspace * i,\n          y: Phaser.Math.RND.integerInRange(400, 500)\n        };\n        this.personLocations.push(pos);\n      }\n\n      this.personLocations = Phaser.Utils.Array.Shuffle(this.personLocations);\n    };\n\n    this.setupParty = () => {\n      this.partyState = {};\n\n      for (let pref in _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs) {\n        this.partyState[pref] = _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs[pref][0];\n      }\n\n      this.partyPrefNames = Object.keys(this.partyState);\n      this.partyPeople = [];\n    };\n\n    this.setupAudio = () => {\n      /* Sets up the audio tracks that can be played in the background.\n       * Trigger changes in the audio playing with changeAudio().\n       */\n      const soundConfig = {\n        mute: false,\n        volume: 1,\n        rate: 1,\n        detune: 0,\n        seek: 0,\n        loop: true,\n        delay: 0\n      };\n      this.iPod = new Map();\n      this.iPod.set('pop', this.sound.add('pop', soundConfig));\n      this.iPod.set('rock', this.sound.add('rock', soundConfig));\n      this.iPod.set('synthwave', this.sound.add('synthwave', soundConfig));\n    };\n\n    this.changeAudio = newTrack => {\n      /* Stops all tracks and plays one defined by newTrack. */\n      for (var track of this.iPod.values()) {\n        track.stop();\n      }\n\n      this.iPod.get(newTrack).play();\n    };\n\n    this.setupControls = () => {\n      this.controls = {};\n      this.partyPrefNames.forEach((prefName, idx) => {\n        const ctrl = new _ui_control__WEBPACK_IMPORTED_MODULE_2__[\"default\"](this, 25 + idx * 200, 550, prefName, this.partyState[prefName], () => {\n          let prefIndex = _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs[prefName].indexOf(this.partyState[prefName]);\n          prefIndex = (prefIndex + 1) % _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs[prefName].length;\n          this.partyState[prefName] = _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs[prefName][prefIndex];\n          this.onStateChange(prefName, this.partyState[prefName]);\n          return this.partyState[prefName];\n        });\n        this.controls[prefName] = ctrl;\n        this.add.existing(ctrl);\n      });\n    };\n\n    this.startTheParty = () => {\n      this.doStageTint();\n      this.partyTickTimer = this.time.addEvent({\n        delay: _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyTickTime,\n        callback: this.doPartyTic,\n        loop: true\n      });\n      this.personSpawnTimer = this.time.addEvent({\n        delay: _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].newPersonSpawnTime,\n        callback: this.addNewRandomPerson,\n        loop: true\n      });\n      this.addNewRandomPerson();\n    };\n\n    this.addNewRandomPerson = () => {\n      if (this.partyPeople.length === _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].maxPersons) return false;\n      const specificPref = Phaser.Utils.Array.GetRandom(this.partyPrefNames);\n      const prefValue = _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs[specificPref][Phaser.Math.RND.integerInRange(0, _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs[specificPref].length)];\n      this.addPartyPerson(this.personLocations.pop(), {\n        [specificPref]: prefValue\n      });\n    };\n\n    this.addPartyPerson = (startingPos, prefs) => {\n      const newPerson = new _actors_Person__WEBPACK_IMPORTED_MODULE_1__[\"default\"](this, startingPos, prefs);\n      this.add.existing(newPerson);\n      this.partyPeople.push(newPerson);\n      newPerson.enterParty();\n    };\n\n    this.doPartyTic = () => {\n      this.partyPeople.forEach(person => person.doPartyTic(this.partyState));\n    };\n\n    this.doStageTint = () => {\n      let tints = [];\n      tints.push(TINT_PURPLE); // Tint the stage based on heat and light settings\n\n      if (this.partyState['light'] == 'ambience') {\n        tints.push(TINT_BLACK);\n      }\n\n      if (this.partyState['heat'] == 'hot') {\n        tints.push(TINT_RED);\n      } else if (this.partyState['heat'] == 'cold') {\n        tints.push(TINT_BLUE);\n      } // Combine all the tints before applying them to the stage\n\n\n      let resultingTint = tints.shift();\n      let newTint;\n\n      while (newTint = tints.shift()) {\n        resultingTint = mergeColors(resultingTint, newTint);\n      }\n\n      this.stageBg.setTint(resultingTint.color);\n    };\n\n    this.update = () => {\n      super.update();\n      this.partyPeople.forEach(person => person.update());\n    };\n  }\n\n  preload() {\n    this.load.image('dummy-stage', assets_dummy_stage_png__WEBPACK_IMPORTED_MODULE_3___default.a);\n    this.load.audio('pop', [assets_audio_pop_mp3__WEBPACK_IMPORTED_MODULE_5___default.a, assets_audio_pop_opus__WEBPACK_IMPORTED_MODULE_6___default.a]);\n    this.load.audio('rock', [assets_audio_rock_mp3__WEBPACK_IMPORTED_MODULE_7___default.a, assets_audio_rock_opus__WEBPACK_IMPORTED_MODULE_8___default.a]);\n    this.load.audio('synthwave', [assets_audio_synthwave_mp3__WEBPACK_IMPORTED_MODULE_9___default.a, assets_audio_synthwave_opus__WEBPACK_IMPORTED_MODULE_10___default.a]);\n    this.load.spritesheet('dance-ss-small', assets_dance_ss_small_2_png__WEBPACK_IMPORTED_MODULE_4___default.a, {\n      frameWidth: 104,\n      frameHeight: 160\n    });\n    console.log('PLAY', this);\n  }\n\n  create() {\n    const frames = this.anims.generateFrameNumbers('dance-ss-small');\n    console.log('frames', frames);\n    this.anims.create({\n      key: 'dance',\n      frames: 'dance-ss-small',\n      frameRate: 1,\n      repeat: -1\n    });\n    this.setupStage();\n    this.setupAudio();\n    this.changeAudio('pop');\n    this.setupSpawnLocations();\n    this.setupParty();\n    this.setupControls();\n    this.startTheParty();\n  }\n\n  onStateChange(prefName, newState) {\n    this.doStageTint();\n\n    if (prefName == 'music') {\n      this.changeAudio(newState);\n    }\n  }\n\n}\n\n//# sourceURL=webpack:///./src/js/scenes/play.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Play; });\n/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../config/config */ \"./src/js/config/config.js\");\n/* harmony import */ var _actors_Person__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../actors/Person */ \"./src/js/actors/Person.js\");\n/* harmony import */ var _ui_control__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/control */ \"./src/js/ui/control.js\");\n/* harmony import */ var assets_dummy_stage_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! assets/dummy-stage.png */ \"./src/assets/dummy-stage.png\");\n/* harmony import */ var assets_dummy_stage_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(assets_dummy_stage_png__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var assets_dance_ss_small_2_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! assets/dance-ss-small-2.png */ \"./src/assets/dance-ss-small-2.png\");\n/* harmony import */ var assets_dance_ss_small_2_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(assets_dance_ss_small_2_png__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var assets_host_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! assets/host.png */ \"./src/assets/host.png\");\n/* harmony import */ var assets_host_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(assets_host_png__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var assets_audio_pop_mp3__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! assets/audio/pop.mp3 */ \"./src/assets/audio/pop.mp3\");\n/* harmony import */ var assets_audio_pop_mp3__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(assets_audio_pop_mp3__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var assets_audio_pop_opus__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! assets/audio/pop.opus */ \"./src/assets/audio/pop.opus\");\n/* harmony import */ var assets_audio_pop_opus__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(assets_audio_pop_opus__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var assets_audio_rock_mp3__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! assets/audio/rock.mp3 */ \"./src/assets/audio/rock.mp3\");\n/* harmony import */ var assets_audio_rock_mp3__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(assets_audio_rock_mp3__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var assets_audio_rock_opus__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! assets/audio/rock.opus */ \"./src/assets/audio/rock.opus\");\n/* harmony import */ var assets_audio_rock_opus__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(assets_audio_rock_opus__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var assets_audio_synthwave_mp3__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! assets/audio/synthwave.mp3 */ \"./src/assets/audio/synthwave.mp3\");\n/* harmony import */ var assets_audio_synthwave_mp3__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(assets_audio_synthwave_mp3__WEBPACK_IMPORTED_MODULE_10__);\n/* harmony import */ var assets_audio_synthwave_opus__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! assets/audio/synthwave.opus */ \"./src/assets/audio/synthwave.opus\");\n/* harmony import */ var assets_audio_synthwave_opus__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(assets_audio_synthwave_opus__WEBPACK_IMPORTED_MODULE_11__);\n/* harmony import */ var assets_audio_ambient_mp3__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! assets/audio/ambient.mp3 */ \"./src/assets/audio/ambient.mp3\");\n/* harmony import */ var assets_audio_ambient_mp3__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(assets_audio_ambient_mp3__WEBPACK_IMPORTED_MODULE_12__);\n/* harmony import */ var assets_audio_besttime1_mp3__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! assets/audio/besttime1.mp3 */ \"./src/assets/audio/besttime1.mp3\");\n/* harmony import */ var assets_audio_besttime1_mp3__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(assets_audio_besttime1_mp3__WEBPACK_IMPORTED_MODULE_13__);\n/* harmony import */ var assets_audio_besttime2_mp3__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! assets/audio/besttime2.mp3 */ \"./src/assets/audio/besttime2.mp3\");\n/* harmony import */ var assets_audio_besttime2_mp3__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(assets_audio_besttime2_mp3__WEBPACK_IMPORTED_MODULE_14__);\n/* harmony import */ var assets_audio_besttime3_mp3__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! assets/audio/besttime3.mp3 */ \"./src/assets/audio/besttime3.mp3\");\n/* harmony import */ var assets_audio_besttime3_mp3__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(assets_audio_besttime3_mp3__WEBPACK_IMPORTED_MODULE_15__);\n/* harmony import */ var assets_audio_besttime4_mp3__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! assets/audio/besttime4.mp3 */ \"./src/assets/audio/besttime4.mp3\");\n/* harmony import */ var assets_audio_besttime4_mp3__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(assets_audio_besttime4_mp3__WEBPACK_IMPORTED_MODULE_16__);\n/* harmony import */ var assets_audio_besttime5_mp3__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! assets/audio/besttime5.mp3 */ \"./src/assets/audio/besttime5.mp3\");\n/* harmony import */ var assets_audio_besttime5_mp3__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(assets_audio_besttime5_mp3__WEBPACK_IMPORTED_MODULE_17__);\n/* harmony import */ var assets_audio_besttime6_mp3__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! assets/audio/besttime6.mp3 */ \"./src/assets/audio/besttime6.mp3\");\n/* harmony import */ var assets_audio_besttime6_mp3__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(assets_audio_besttime6_mp3__WEBPACK_IMPORTED_MODULE_18__);\n/* harmony import */ var assets_audio_door_mp3__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! assets/audio/door.mp3 */ \"./src/assets/audio/door.mp3\");\n/* harmony import */ var assets_audio_door_mp3__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(assets_audio_door_mp3__WEBPACK_IMPORTED_MODULE_19__);\n/* harmony import */ var assets_audio_happy1_mp3__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! assets/audio/happy1.mp3 */ \"./src/assets/audio/happy1.mp3\");\n/* harmony import */ var assets_audio_happy1_mp3__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(assets_audio_happy1_mp3__WEBPACK_IMPORTED_MODULE_20__);\n/* harmony import */ var assets_audio_happy2_mp3__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! assets/audio/happy2.mp3 */ \"./src/assets/audio/happy2.mp3\");\n/* harmony import */ var assets_audio_happy2_mp3__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(assets_audio_happy2_mp3__WEBPACK_IMPORTED_MODULE_21__);\n/* harmony import */ var assets_audio_leave1_mp3__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! assets/audio/leave1.mp3 */ \"./src/assets/audio/leave1.mp3\");\n/* harmony import */ var assets_audio_leave1_mp3__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(assets_audio_leave1_mp3__WEBPACK_IMPORTED_MODULE_22__);\n/* harmony import */ var assets_audio_leave2_mp3__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! assets/audio/leave2.mp3 */ \"./src/assets/audio/leave2.mp3\");\n/* harmony import */ var assets_audio_leave2_mp3__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(assets_audio_leave2_mp3__WEBPACK_IMPORTED_MODULE_23__);\n/* harmony import */ var assets_audio_leave3_mp3__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! assets/audio/leave3.mp3 */ \"./src/assets/audio/leave3.mp3\");\n/* harmony import */ var assets_audio_leave3_mp3__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(assets_audio_leave3_mp3__WEBPACK_IMPORTED_MODULE_24__);\n/* harmony import */ var assets_audio_leave4_mp3__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! assets/audio/leave4.mp3 */ \"./src/assets/audio/leave4.mp3\");\n/* harmony import */ var assets_audio_leave4_mp3__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(assets_audio_leave4_mp3__WEBPACK_IMPORTED_MODULE_25__);\n/* harmony import */ var assets_audio_leave5_mp3__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! assets/audio/leave5.mp3 */ \"./src/assets/audio/leave5.mp3\");\n/* harmony import */ var assets_audio_leave5_mp3__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(assets_audio_leave5_mp3__WEBPACK_IMPORTED_MODULE_26__);\n/* harmony import */ var assets_audio_leave6_mp3__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! assets/audio/leave6.mp3 */ \"./src/assets/audio/leave6.mp3\");\n/* harmony import */ var assets_audio_leave6_mp3__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(assets_audio_leave6_mp3__WEBPACK_IMPORTED_MODULE_27__);\n/* harmony import */ var assets_audio_unhappy1_mp3__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! assets/audio/unhappy1.mp3 */ \"./src/assets/audio/unhappy1.mp3\");\n/* harmony import */ var assets_audio_unhappy1_mp3__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(assets_audio_unhappy1_mp3__WEBPACK_IMPORTED_MODULE_28__);\n/* harmony import */ var assets_audio_unhappy2_mp3__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! assets/audio/unhappy2.mp3 */ \"./src/assets/audio/unhappy2.mp3\");\n/* harmony import */ var assets_audio_unhappy2_mp3__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(assets_audio_unhappy2_mp3__WEBPACK_IMPORTED_MODULE_29__);\n/* harmony import */ var assets_audio_walkin_mp3__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! assets/audio/walkin.mp3 */ \"./src/assets/audio/walkin.mp3\");\n/* harmony import */ var assets_audio_walkin_mp3__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(assets_audio_walkin_mp3__WEBPACK_IMPORTED_MODULE_30__);\n/* harmony import */ var assets_audio_welcome1_mp3__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! assets/audio/welcome1.mp3 */ \"./src/assets/audio/welcome1.mp3\");\n/* harmony import */ var assets_audio_welcome1_mp3__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(assets_audio_welcome1_mp3__WEBPACK_IMPORTED_MODULE_31__);\n/* harmony import */ var assets_audio_welcome2_mp3__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! assets/audio/welcome2.mp3 */ \"./src/assets/audio/welcome2.mp3\");\n/* harmony import */ var assets_audio_welcome2_mp3__WEBPACK_IMPORTED_MODULE_32___default = /*#__PURE__*/__webpack_require__.n(assets_audio_welcome2_mp3__WEBPACK_IMPORTED_MODULE_32__);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nconst STAGE_TINT_DARK = Phaser.Display.Color.HexStringToColor('0x666666');\nconst STAGE_TINT_RED = Phaser.Display.Color.HexStringToColor('0xffaaaa');\nconst STAGE_TINT_BLUE = Phaser.Display.Color.HexStringToColor('0xaaaaff');\nconst STAGE_TINT_PURPLE = Phaser.Display.Color.HexStringToColor('0xff99ff');\n\nconst mergeColors = (color1, color2) => {\n  let r = Math.floor(Math.abs(color1.red - color2.red) / 2) + Math.min(color1.red, color2.red);\n  let g = Math.floor(Math.abs(color1.green - color2.green) / 2) + Math.min(color1.green, color2.green);\n  let b = Math.floor(Math.abs(color1.blue - color2.blue) / 2) + Math.min(color1.blue, color2.blue);\n  return new Phaser.Display.Color(r, g, b);\n};\n\nclass Play extends Phaser.Scene {\n  constructor() {\n    super({\n      key: 'play'\n    });\n\n    this.setupClock = () => {\n      this.clockTimer = this.time.addEvent({\n        delay: _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyTickTime,\n        repeat: _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyDuration - 1,\n        timeScale: _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partySpeedFactor,\n        callback: this.stopTheParty\n      });\n      this.graphics = this.add.graphics({\n        x: 0,\n        y: 0\n      });\n      this.clockSize = 75;\n    };\n\n    this.setupStage = () => {\n      this.stageBg = this.add.image(this.sys.canvas.width * 0.5, this.sys.canvas.height * 0.5, 'dummy-stage');\n      this.scoreText = this.add.text(0, 0, `Score: 0`, _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].textStyles.score);\n      this.scoreText.setOrigin(0);\n      let location = this.getSpawnLocation();\n      this.hostSprite = this.add.sprite(location.x, location.y, 'host');\n    };\n\n    this.getSpawnLocation = () => {\n      var loc = {\n        x: Phaser.Math.RND.integerInRange(100, 760),\n        y: Phaser.Math.RND.integerInRange(400, 500)\n      };\n      return loc;\n    };\n\n    this.setupParty = () => {\n      this.partyState = {};\n\n      for (let pref in _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs) {\n        this.partyState[pref] = _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs[pref][0];\n      }\n\n      this.partyState.cumulativeScore = 0;\n      this.partyState.peopleGained = 0;\n      this.partyState.peopleLost = 0;\n      this.partyPrefNames = Object.keys(_config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs);\n      this.partyPeople = [];\n    };\n\n    this.setupAudio = () => {\n      /* Sets up the audio tracks that can be played in the background.\n       * Trigger changes in the audio playing with changeMusic().\n       */\n      const soundCfgMusic = {\n        mute: false,\n        volume: 1,\n        rate: 1,\n        detune: 0,\n        seek: 0,\n        loop: true,\n        delay: 0\n      };\n      const soundCfgAmbient = {\n        mute: false,\n        volume: 0.85,\n        rate: 1,\n        detune: 0,\n        seek: 0,\n        loop: true,\n        delay: 0\n      };\n      const soundCfgSfx = {\n        mute: false,\n        volume: 1,\n        rate: 1,\n        detune: 0,\n        seek: 0,\n        loop: false,\n        delay: 0\n      };\n      this.gAudio = {}; // Welcome\n\n      this.gAudio.welcome = [this.sound.add('welcome1', soundCfgSfx), this.sound.add('welcome2', soundCfgSfx)]; // Music\n\n      this.gAudio.music = new Map();\n      this.gAudio.music.set('pop', this.sound.add('pop', soundCfgMusic));\n      this.gAudio.music.set('rock', this.sound.add('rock', soundCfgMusic));\n      this.gAudio.music.set('synthwave', this.sound.add('synthwave', soundCfgMusic)); // Ambient (looped)\n\n      this.gAudio.ambient = this.sound.add('ambient', soundCfgAmbient); // Walkin/Door SFX\n\n      this.gAudio.walkin = this.sound.add('walkin', soundCfgSfx);\n      this.gAudio.door = this.sound.add('door', soundCfgSfx); // Happy/unhappy SFX\n\n      this.gAudio.happy = [this.sound.add('happy1', soundCfgSfx), this.sound.add('happy2', soundCfgSfx)];\n      this.gAudio.unhappy = [this.sound.add('unhappy1', soundCfgSfx), this.sound.add('unhappy2', soundCfgSfx)]; // Besttime/leave SFX\n\n      this.gAudio.besttime = [this.sound.add('besttime1', soundCfgSfx), this.sound.add('besttime2', soundCfgSfx), this.sound.add('besttime3', soundCfgSfx), this.sound.add('besttime4', soundCfgSfx), this.sound.add('besttime5', soundCfgSfx), this.sound.add('besttime6', soundCfgSfx)];\n      this.gAudio.leave = [this.sound.add('leave1', soundCfgSfx), this.sound.add('leave2', soundCfgSfx), this.sound.add('leave3', soundCfgSfx), this.sound.add('leave4', soundCfgSfx), this.sound.add('leave5', soundCfgSfx), this.sound.add('leave6', soundCfgSfx)];\n    };\n\n    this.changeMusic = newTrack => {\n      /* Stops all tracks and plays one defined by newTrack. */\n      for (var track of this.gAudio.music.values()) {\n        track.stop();\n      }\n\n      this.gAudio.music.get(newTrack).play();\n    };\n\n    this.setupControls = () => {\n      this.controls = {};\n      this.partyPrefNames.forEach((prefName, idx) => {\n        const ctrl = new _ui_control__WEBPACK_IMPORTED_MODULE_2__[\"default\"](this, 25 + idx * 200, 550, prefName, this.partyState[prefName], () => {\n          let prefIndex = _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs[prefName].indexOf(this.partyState[prefName]);\n          prefIndex = (prefIndex + 1) % _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs[prefName].length;\n          this.partyState[prefName] = _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs[prefName][prefIndex];\n          this.onStateChange(prefName, this.partyState[prefName]);\n          return this.partyState[prefName];\n        });\n        this.controls[prefName] = ctrl;\n        this.add.existing(ctrl);\n      });\n    };\n\n    this.startTheParty = () => {\n      this.doStageTint();\n      this.partyTickTimer = this.time.addEvent({\n        delay: _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyTickTime,\n        callback: this.doPartyTic,\n        loop: true\n      });\n      this.personSpawnTimer = this.time.addEvent({\n        delay: _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].newPersonSpawnTime,\n        callback: this.addNewRandomPerson,\n        loop: true\n      });\n      this.addNewRandomPerson();\n      this.changeMusic('pop');\n      this.gAudio.ambient.play();\n    };\n\n    this.stopTheParty = () => {\n      if (this.clockTimer.getOverallProgress() >= 1) {\n        // Party's over, punks!\n        console.log('Party\\'s Over!', this.partyState);\n        this.partyTickTimer.destroy();\n        this.personSpawnTimer.destroy();\n      }\n    };\n\n    this.addNewRandomPerson = () => {\n      var prefs = {};\n      this.partyPrefNames.forEach(function (pref) {\n        const prefValue = _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs[pref][Phaser.Math.RND.integerInRange(0, _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyPrefs[pref].length)];\n        prefs[pref] = prefValue;\n      }); // TODO retry until we get a position at least <X>px away from other patrons\n\n      var spawnLocation = this.getSpawnLocation();\n      this.addPartyPerson(spawnLocation, prefs);\n    };\n\n    this.addPartyPerson = (startingPos, prefs) => {\n      const newPerson = new _actors_Person__WEBPACK_IMPORTED_MODULE_1__[\"default\"](this, startingPos, prefs);\n      this.add.existing(newPerson);\n      this.partyPeople.push(newPerson);\n      newPerson.enterParty();\n      this.partyState.peopleGained++;\n    };\n\n    this.doPartyTic = () => {\n      this.partyPeople.forEach(person => person.doPartyTic(this.partyState));\n      this.scoreText.setText(`Score: ${this.partyState.cumulativeScore}`);\n    };\n\n    this.doStageTint = () => {\n      let tints = [];\n      tints.push(STAGE_TINT_PURPLE); // Tint the stage based on heat and light settings\n\n      if (this.partyState['light'] == 'ambience') {\n        tints.push(STAGE_TINT_DARK);\n      }\n\n      if (this.partyState['heat'] == 'hot') {\n        tints.push(STAGE_TINT_RED);\n      } else if (this.partyState['heat'] == 'cold') {\n        tints.push(STAGE_TINT_BLUE);\n      } // Combine all the tints before applying them to the stage\n\n\n      let resultingTint = tints.shift();\n      let newTint;\n\n      while (newTint = tints.shift()) {\n        resultingTint = mergeColors(resultingTint, newTint);\n      }\n\n      this.stageBg.setTint(resultingTint.color);\n    };\n\n    this.drawClock = (x, y, timer) => {\n      // Clock code was originally provided as a Phaser example at http://labs.phaser.io/edit.html?src=src\\time\\clock.js\n      //  Progress is between 0 and 1, where 0 = the hand pointing up and then rotating clockwise a full 360\n      //  The frame\n      this.graphics.clear();\n      this.graphics.lineStyle(6, 0xffffff, 1);\n      this.graphics.strokeCircle(x, y, this.clockSize);\n      let angle, dest, p1, p2, size; //  The \"hour\" hand (overall progress) (only if repeat > 0)\n\n      if (timer.repeat > 0) {\n        size = this.clockSize * 0.6; // Give the player x hours, starting at 7pm\n\n        let durationAngle = _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].partyDuration * 30;\n        angle = durationAngle * timer.getOverallProgress() + 120;\n        dest = Phaser.Math.RotateAroundDistance({\n          x: x,\n          y: y\n        }, x, y, Phaser.Math.DegToRad(angle), size);\n        this.graphics.lineStyle(2, 0xff0000, 1);\n        this.graphics.beginPath();\n        this.graphics.moveTo(x, y);\n        p1 = Phaser.Math.RotateAroundDistance({\n          x: x,\n          y: y\n        }, x, y, Phaser.Math.DegToRad(angle - 5), size * 0.7);\n        this.graphics.lineTo(p1.x, p1.y);\n        this.graphics.lineTo(dest.x, dest.y);\n        this.graphics.moveTo(x, y);\n        p2 = Phaser.Math.RotateAroundDistance({\n          x: x,\n          y: y\n        }, x, y, Phaser.Math.DegToRad(angle + 5), size * 0.7);\n        this.graphics.lineTo(p2.x, p2.y);\n        this.graphics.lineTo(dest.x, dest.y);\n        this.graphics.strokePath();\n        this.graphics.closePath();\n      } //  The current iteration hand\n\n\n      size = this.clockSize * 0.95;\n      angle = 360 * timer.getProgress() - 90;\n      dest = Phaser.Math.RotateAroundDistance({\n        x: x,\n        y: y\n      }, x, y, Phaser.Math.DegToRad(angle), size);\n      this.graphics.lineStyle(2, 0xffff00, 1);\n      this.graphics.beginPath();\n      this.graphics.moveTo(x, y);\n      p1 = Phaser.Math.RotateAroundDistance({\n        x: x,\n        y: y\n      }, x, y, Phaser.Math.DegToRad(angle - 5), size * 0.7);\n      this.graphics.lineTo(p1.x, p1.y);\n      this.graphics.lineTo(dest.x, dest.y);\n      this.graphics.moveTo(x, y);\n      p2 = Phaser.Math.RotateAroundDistance({\n        x: x,\n        y: y\n      }, x, y, Phaser.Math.DegToRad(angle + 5), size * 0.7);\n      this.graphics.lineTo(p2.x, p2.y);\n      this.graphics.lineTo(dest.x, dest.y);\n      this.graphics.strokePath();\n      this.graphics.closePath();\n    };\n\n    this.update = () => {\n      super.update();\n      this.partyPeople.forEach(person => person.update());\n      this.drawClock(100, 200, this.clockTimer);\n    };\n  }\n\n  preload() {\n    this.load.image('dummy-stage', assets_dummy_stage_png__WEBPACK_IMPORTED_MODULE_3___default.a);\n    this.load.image('host', assets_host_png__WEBPACK_IMPORTED_MODULE_5___default.a);\n    this.load.audio('pop', [assets_audio_pop_mp3__WEBPACK_IMPORTED_MODULE_6___default.a, assets_audio_pop_opus__WEBPACK_IMPORTED_MODULE_7___default.a]);\n    this.load.audio('rock', [assets_audio_rock_mp3__WEBPACK_IMPORTED_MODULE_8___default.a, assets_audio_rock_opus__WEBPACK_IMPORTED_MODULE_9___default.a]);\n    this.load.audio('synthwave', [assets_audio_synthwave_mp3__WEBPACK_IMPORTED_MODULE_10___default.a, assets_audio_synthwave_opus__WEBPACK_IMPORTED_MODULE_11___default.a]);\n    this.load.spritesheet('dance-ss-small', assets_dance_ss_small_2_png__WEBPACK_IMPORTED_MODULE_4___default.a, {\n      frameWidth: 104,\n      frameHeight: 160\n    });\n    this.load.audio('ambient', assets_audio_ambient_mp3__WEBPACK_IMPORTED_MODULE_12___default.a);\n    this.load.audio('besttime1', assets_audio_besttime1_mp3__WEBPACK_IMPORTED_MODULE_13___default.a);\n    this.load.audio('besttime2', assets_audio_besttime2_mp3__WEBPACK_IMPORTED_MODULE_14___default.a);\n    this.load.audio('besttime3', assets_audio_besttime3_mp3__WEBPACK_IMPORTED_MODULE_15___default.a);\n    this.load.audio('besttime4', assets_audio_besttime4_mp3__WEBPACK_IMPORTED_MODULE_16___default.a);\n    this.load.audio('besttime5', assets_audio_besttime5_mp3__WEBPACK_IMPORTED_MODULE_17___default.a);\n    this.load.audio('besttime6', assets_audio_besttime6_mp3__WEBPACK_IMPORTED_MODULE_18___default.a);\n    this.load.audio('door', assets_audio_door_mp3__WEBPACK_IMPORTED_MODULE_19___default.a);\n    this.load.audio('happy1', assets_audio_happy1_mp3__WEBPACK_IMPORTED_MODULE_20___default.a);\n    this.load.audio('happy2', assets_audio_happy2_mp3__WEBPACK_IMPORTED_MODULE_21___default.a);\n    this.load.audio('leave1', assets_audio_leave1_mp3__WEBPACK_IMPORTED_MODULE_22___default.a);\n    this.load.audio('leave2', assets_audio_leave2_mp3__WEBPACK_IMPORTED_MODULE_23___default.a);\n    this.load.audio('leave3', assets_audio_leave3_mp3__WEBPACK_IMPORTED_MODULE_24___default.a);\n    this.load.audio('leave4', assets_audio_leave4_mp3__WEBPACK_IMPORTED_MODULE_25___default.a);\n    this.load.audio('leave5', assets_audio_leave5_mp3__WEBPACK_IMPORTED_MODULE_26___default.a);\n    this.load.audio('leave6', assets_audio_leave6_mp3__WEBPACK_IMPORTED_MODULE_27___default.a);\n    this.load.audio('unhappy1', assets_audio_unhappy1_mp3__WEBPACK_IMPORTED_MODULE_28___default.a);\n    this.load.audio('unhappy2', assets_audio_unhappy2_mp3__WEBPACK_IMPORTED_MODULE_29___default.a);\n    this.load.audio('walkin', assets_audio_walkin_mp3__WEBPACK_IMPORTED_MODULE_30___default.a);\n    this.load.audio('welcome1', assets_audio_welcome1_mp3__WEBPACK_IMPORTED_MODULE_31___default.a);\n    this.load.audio('welcome2', assets_audio_welcome2_mp3__WEBPACK_IMPORTED_MODULE_32___default.a);\n    console.log('PLAY', this);\n  }\n\n  create() {\n    const frames = this.anims.generateFrameNumbers('dance-ss-small');\n    console.log('frames', frames);\n    this.anims.create({\n      key: 'dance',\n      frames: 'dance-ss-small',\n      frameRate: 1,\n      repeat: -1\n    });\n    this.setupStage();\n    this.setupAudio();\n    this.setupParty();\n    this.setupClock();\n    this.setupControls();\n    this.startTheParty();\n  }\n\n  onStateChange(prefName, newState) {\n    this.doStageTint();\n\n    if (prefName == 'music') {\n      this.changeMusic(newState);\n    }\n  }\n\n}\n\n//# sourceURL=webpack:///./src/js/scenes/play.js?");
 
 /***/ }),
 
@@ -344,7 +585,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Title; });\n/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../config/config */ \"./src/js/config/config.js\");\n\nclass Title extends Phaser.Scene {\n  constructor() {\n    super({\n      key: 'title'\n    });\n  }\n\n  preload() {\n    // Load fonts for the title screen\n    this.load.script('webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');\n  }\n\n  create() {\n    console.log('PHASER', Phaser);\n    console.log('Title create');\n    WebFont.load({\n      google: {\n        families: [_config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].textStyles.title.fontFamily, _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].textStyles.default.fontFamily]\n      },\n      active: () => {\n        const title = this.add.text(400, 200, 'This is the Title Screen', _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].textStyles.title);\n        title.setOrigin(0.5);\n        const prompt = this.add.text(400, 400, 'Press any key to continue', _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].textStyles.default);\n        prompt.setOrigin(0.5);\n      }\n    });\n    this.input.manager.enabled = true;\n    this.input.once('pointerdown', () => {\n      this.scene.start('play');\n    }, this);\n  }\n\n}\n;\n\n//# sourceURL=webpack:///./src/js/scenes/title.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Title; });\n/* harmony import */ var _config_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../config/config */ \"./src/js/config/config.js\");\n/* harmony import */ var assets_title_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! assets/title-logo.png */ \"./src/assets/title-logo.png\");\n/* harmony import */ var assets_title_logo_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(assets_title_logo_png__WEBPACK_IMPORTED_MODULE_1__);\n\n\nclass Title extends Phaser.Scene {\n  constructor() {\n    super({\n      key: 'title'\n    });\n  }\n\n  preload() {\n    this.load.image('logo', assets_title_logo_png__WEBPACK_IMPORTED_MODULE_1___default.a); // Load fonts for the game\n\n    this.load.script('webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');\n  }\n\n  create() {\n    console.log('PHASER', Phaser);\n    console.log('Title create');\n    WebFont.load({\n      google: {\n        families: [_config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].textStyles.default.fontFamily, _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].textStyles.score.fontFamily]\n      },\n      active: () => {\n        this.add.image(_config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].canvas.width / 2, _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].canvas.height / 2, 'logo');\n        const prompt = this.add.text(400, 400, 'Press any key to continue', _config_config__WEBPACK_IMPORTED_MODULE_0__[\"default\"].textStyles.default);\n        prompt.setOrigin(0.5);\n      }\n    });\n    this.input.manager.enabled = true;\n    this.input.once('pointerdown', () => {\n      this.scene.start('play');\n    }, this);\n  }\n\n}\n;\n\n//# sourceURL=webpack:///./src/js/scenes/title.js?");
 
 /***/ }),
 
