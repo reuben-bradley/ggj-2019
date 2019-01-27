@@ -298,6 +298,12 @@ export default class Play extends Phaser.Scene {
       console.log('Party\'s Over!', this.partyState);
       this.partyTickTimer.destroy();
       this.personSpawnTimer.destroy();
+
+      // Stop all BGM audio
+      this.gAudio.ambient.stop();
+      for (var track of this.gAudio.music.values()) {
+        track.stop();
+      }
     }
   };
 
