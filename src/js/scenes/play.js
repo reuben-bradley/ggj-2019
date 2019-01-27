@@ -57,7 +57,6 @@ export default class Play extends Phaser.Scene {
     this.setupStage();
     this.setupAudio();
     this.changeAudio('pop');
-    this.setupSpawnLocations();
     this.setupParty();
     this.setupControls();
     this.startTheParty();
@@ -78,19 +77,12 @@ export default class Play extends Phaser.Scene {
     );
   };
 
-  setupSpawnLocations = () => {
-    this.personLocations = [];
-    const xmin = 100;
-    const xmax = 760;
-    const xspace = ((xmax - xmin) / config.maxPersons) >> 0;
-    for (let i = 0; i < config.maxPersons; i++) {
-      const pos = {
-        x: xmin + (xspace * i),
-        y: Phaser.Math.RND.integerInRange(400, 500)
-      }
-      this.personLocations.push(pos);
+  getSpawnLocation = () => {
+    var loc = {
+      x: Phaser.Math.RND.integerInRange(100, 760),
+      y: Phaser.Math.RND.integerInRange(400, 500)
     }
-    this.personLocations = Phaser.Utils.Array.Shuffle(this.personLocations);
+    return loc;
   };
 
   setupParty = () => {
@@ -181,8 +173,11 @@ export default class Play extends Phaser.Scene {
       prefs[pref] = prefValue;
     });
 
+    // TODO retry until we get a position at least <X>px away from other patrons
+    var spawnLocation = this.getSpawnLocation();
+
     this.addPartyPerson(
-      this.personLocations.pop(),
+      spawnLocation,
       prefs
     );
   };
