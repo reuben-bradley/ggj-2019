@@ -33,7 +33,16 @@ const config = {
                 x: 5,
                 y: 1
             }
-        }
+        },
+        gameover: {
+            fontFamily: 'Bangers',
+            fontSize: 82,
+            color: '#bb0000',
+            padding: {
+                x: 5,
+                y: 1
+            }
+      },
     },
     partyTickTime: 1000,
     newPersonSpawnTime: 6000,
