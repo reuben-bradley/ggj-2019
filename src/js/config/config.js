@@ -36,7 +36,7 @@ const config = {
             color: 'cyan'
         },
         score: {
-            fontFamily: 'Arial',
+            fontFamily: 'Montserrat',
             fontSize: 28,
             color: '#bb0000',
             padding: {

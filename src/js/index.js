@@ -14,7 +14,7 @@ const gameConfig = {
             gravity: { y: 200 }
         }
     },
-    scene: [Play]
+    scene: [Title, Play]
 };
 
 const game = new Phaser.Game(gameConfig);

@@ -5,6 +5,7 @@ import Control from '../ui/control';
 
 import dummyStageImg from 'assets/dummy-stage.png';
 import danceSprites from 'assets/dance-ss-small-2.png';
+import hostSprite from 'assets/host.png';
 
 import popMp3 from 'assets/audio/pop.mp3';
 import popOpus from 'assets/audio/pop.opus';
@@ -55,6 +56,7 @@ export default class Play extends Phaser.Scene {
   preload() {
     this.load.image('dummy-stage', dummyStageImg);
 
+    this.load.image('host', hostSprite);
     this.load.audio('pop', [popMp3, popOpus]);
     this.load.audio('rock', [rockMp3, rockOpus]);
     this.load.audio('synthwave', [synthwaveMp3, synthwaveOpus]);
@@ -134,6 +136,8 @@ export default class Play extends Phaser.Scene {
     );
     this.scoreText = this.add.text(0, 0, `Score: 0`, config.textStyles.score);
     this.scoreText.setOrigin(0);
+    let location = this.getSpawnLocation();
+    this.hostSprite = this.add.sprite(location.x, location.y, 'host');
   };
 
   getSpawnLocation = () => {
