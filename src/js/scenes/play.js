@@ -329,6 +329,7 @@ export default class Play extends Phaser.Scene {
     const newPerson = new Person(this, startingPos, prefs);
     this.add.existing(newPerson);
     this.partyPeople.push(newPerson);
+    this.gAudio.walkin.play();
     newPerson.enterParty();
     this.partyState.peopleGained++;
   };
