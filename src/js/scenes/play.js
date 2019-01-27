@@ -184,6 +184,7 @@ export default class Play extends Phaser.Scene {
       // Party's over, punks!
       console.log('Party\'s Over!', this.partyState);
       this.partyTickTimer.destroy();
+      this.personSpawnTimer.destroy();
     }
   };
 
