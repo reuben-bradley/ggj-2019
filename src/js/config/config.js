@@ -44,7 +44,6 @@ const config = {
     partyPrefs: {
         heat: ['cold', 'warm', 'hot'],
         light: ['ambience', 'high'],
-        volume: ['low', 'medium', 'loud'],
         music: ['pop', 'synthwave', 'rock']
     },
     partyDuration: 5,
