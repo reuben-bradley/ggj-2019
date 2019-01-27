@@ -51,7 +51,7 @@ class Person extends Phaser.GameObjects.Sprite {
       const partyVal = partyState[pref];
 
       let prefDiff = Math.abs(config.partyPrefs[pref].indexOf(prefVal) - config.partyPrefs[pref].indexOf(partyVal));
-      happinessDiff = config.happinessGrowth - prefDiff;
+      happinessDiff += config.happinessGrowth - prefDiff;
     }
     // Only grow happiness if all prefs are met
     this.happiness += happinessDiff;
