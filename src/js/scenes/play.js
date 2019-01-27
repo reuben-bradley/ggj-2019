@@ -328,6 +328,7 @@ export default class Play extends Phaser.Scene {
   };
 
   addPartyPerson = (startingPos, prefs) => {
+    console.log("Adding person with prefs:", prefs);
     const newPerson = new Person(this, startingPos, prefs);
     this.add.existing(newPerson);
     this.partyPeople.push(newPerson);
