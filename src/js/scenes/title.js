@@ -18,7 +18,7 @@ export default class Title extends Phaser.Scene {
         console.log('Title create');
         WebFont.load({
             google: {
-                families: [config.textStyles.title.fontFamily, config.textStyles.default.fontFamily, config.textStyles.score.fontFamily]
+                families: [config.textStyles.default.fontFamily, config.textStyles.score.fontFamily]
             },
             active: () => {
                 this.add.image(config.canvas.width / 2, config.canvas.height / 2, 'logo');

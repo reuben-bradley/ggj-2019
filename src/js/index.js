@@ -1,7 +1,6 @@
 import 'phaser';
 import config from './config/config';
 import Title from './scenes/title';
-import Main from './scenes/main';
 import Play from './scenes/play';
 
 const gameConfig = {
