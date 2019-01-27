@@ -359,6 +359,21 @@ export default class Play extends Phaser.Scene {
       for (var track of this.gAudio.music.values()) {
         track.stop();
       }
+
+      // Calculate final scores
+      const finalScore = 'Final Score: ' + this.partyState.cumulativeScore;
+      const finalCount = 'Final Count: ' + this.partyPeople.length;
+
+      // Game over text
+      let txGameOver1 = this.add.text(200, 100, 'Party Over!', Object.assign({color: '#00bb00'}, config.textStyles.gameover));
+      let txGameOver2 = this.add.text(200, 180, finalScore, Object.assign({color: '#00bb00'}, config.textStyles.gameover));
+      let txGameOver3 = this.add.text(200, 260, finalCount, Object.assign({color: '#00bb00'}, config.textStyles.gameover));
+
+
+      // Send everyone home
+      for (var slacker of this.partyPeople.values()) {
+        slacker.leaveParty();
+      }
     }
   };
 
@@ -381,6 +396,7 @@ export default class Play extends Phaser.Scene {
   };
 
   addPartyPerson = (startingPos, prefs) => {
+    console.log("Adding person with prefs:", prefs);
     const newPerson = new Person(this, startingPos, prefs);
     this.add.existing(newPerson);
     this.partyPeople.push(newPerson);
