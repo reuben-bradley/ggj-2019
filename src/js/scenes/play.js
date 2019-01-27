@@ -76,7 +76,6 @@ export default class Play extends Phaser.Scene {
       this.sys.canvas.height * 0.5,
       'dummy-stage'
     );
-    this.stageBg.setScale(0.45);
   };
 
   setupSpawnLocations = () => {
