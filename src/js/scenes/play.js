@@ -6,6 +6,9 @@ import Control from '../ui/control';
 import dummyStageImg from 'assets/dummy-stage.png';
 import danceSprites from 'assets/dance-ss-small-2.png';
 import hostSprite from 'assets/host.png';
+import fireplaceSprite from 'assets/fireplace.png';
+import lightsSprite from 'assets/lightswitch.png';
+import speakerSprite from 'assets/speakers.png';
 
 import popMp3 from 'assets/audio/pop.mp3';
 import popOpus from 'assets/audio/pop.opus';
@@ -56,6 +59,18 @@ export default class Play extends Phaser.Scene {
   preload() {
     this.load.image('dummy-stage', dummyStageImg);
     this.load.image('host', hostSprite);
+    this.load.spritesheet('fireplace', fireplaceSprite, {
+      frameWidth: 125,
+      frameHeight: 121
+    });
+    this.load.spritesheet('lightswitch', lightsSprite, {
+      frameWidth: 154,
+      frameHeight: 175
+    });
+    this.load.spritesheet('speaker', speakerSprite, {
+      frameWidth: 97,
+      frameHeight: 135
+    });
 
     this.load.audio('pop', [popMp3, popOpus]);
     this.load.audio('rock', [rockMp3, rockOpus]);
@@ -125,7 +140,7 @@ export default class Play extends Phaser.Scene {
       callback: this.stopTheParty
     });
     this.graphics = this.add.graphics({ x: 0, y: 0 });
-    this.clockSize = 75;
+    this.clockSize = 56;
   };
 
   setupStage = () => {
@@ -134,10 +149,11 @@ export default class Play extends Phaser.Scene {
       this.sys.canvas.height * 0.5,
       'dummy-stage'
     );
-    this.scoreText = this.add.text(0, 0, `Score: 0`, config.textStyles.score);
-    this.scoreText.setOrigin(0);
-    let location = this.getSpawnLocation();
-    this.hostSprite = this.add.sprite(location.x, location.y, 'host');
+    this.scoreText = this.add.text(config.canvas.width, 0, `Score: 0`, config.textStyles.score);
+    this.scoreText.setOrigin(1, 0);
+    this.hostSprite = this.add.sprite(config.canvas.width - 120, config.canvas.height - 20, 'host');
+    this.hostSprite.setOrigin(0, 1);
+    this.hostSprite.flipX = true;
   };
 
   getSpawnLocation = () => {
@@ -255,24 +271,61 @@ export default class Play extends Phaser.Scene {
 
   setupControls = () => {
     this.controls = {};
-    this.partyPrefNames.forEach((prefName, idx) => {
-      const ctrl = new Control(
-        this,
-        25 + (idx * 200),
-        550,
-        prefName,
-        this.partyState[prefName],
-        () => {
-          let prefIndex = config.partyPrefs[prefName].indexOf(this.partyState[prefName]);
-          prefIndex = (prefIndex + 1) % config.partyPrefs[prefName].length;
-          this.partyState[prefName] = config.partyPrefs[prefName][prefIndex];
-          this.onStateChange(prefName, this.partyState[prefName]);
-          return this.partyState[prefName];
-        }
-      );
-      this.controls[prefName] = ctrl;
-      this.add.existing(ctrl);
-    });
+
+    // Lightswitch
+    let ctrl = new Control(
+      this,
+      30,
+      config.canvas.height,
+      'lightswitch',
+      config.partyPrefs['light'].indexOf(this.partyState['light']),
+      () => {
+        let prefIndex = config.partyPrefs['light'].indexOf(this.partyState['light']);
+        prefIndex = (prefIndex + 1) % config.partyPrefs['light'].length;
+        this.partyState['light'] = config.partyPrefs['light'][prefIndex];
+        this.onStateChange('light', this.partyState['light']);
+        return prefIndex;
+      }
+    );
+    ctrl.setOrigin(0, 1);
+    this.controls['lights'] = ctrl;
+    this.add.existing(ctrl);
+
+    // Speakers
+    ctrl = new Control(
+      this,
+      280,
+      220,
+      'speaker',
+      config.partyPrefs['music'].indexOf(this.partyState['music']),
+      () => {
+        let prefIndex = config.partyPrefs['music'].indexOf(this.partyState['music']);
+        prefIndex = (prefIndex + 1) % config.partyPrefs['music'].length;
+        this.partyState['music'] = config.partyPrefs['music'][prefIndex];
+        this.onStateChange('music', this.partyState['music']);
+        return 0;
+      }
+    );
+    this.controls['music'] = ctrl;
+    this.add.existing(ctrl);
+    
+    // Fireplace
+    ctrl = new Control(
+      this,
+      680,
+      220,
+      'fireplace',
+      config.partyPrefs['heat'].indexOf(this.partyState['heat']),
+      () => {
+        let prefIndex = config.partyPrefs['heat'].indexOf(this.partyState['heat']);
+        prefIndex = (prefIndex + 1) % config.partyPrefs['heat'].length;
+        this.partyState['heat'] = config.partyPrefs['heat'][prefIndex];
+        this.onStateChange('heat', this.partyState['heat']);
+        return prefIndex;
+      }
+    );
+    this.controls['heat'] = ctrl;
+    this.add.existing(ctrl);
   };
 
   startTheParty = () => {
@@ -425,6 +478,6 @@ export default class Play extends Phaser.Scene {
   update = () => {
     super.update();
     this.partyPeople.forEach((person) => person.update());
-    this.drawClock(100, 200, this.clockTimer);
+    this.drawClock(15 + this.clockSize, 15 + this.clockSize, this.clockTimer);
   }
 }
