@@ -15,16 +15,6 @@ const config = {
                 y: 1
             }
         },
-        title: {
-            fontFamily: 'Cinzel Decorative',
-            fontSize: 42,
-            fontWeight: 900,
-            color: '#00bb00',
-            padding: {
-                x: 5,
-                y: 1
-            }
-        },
         meter: {
             fontFamily: 'Arial',
             fontSize: 24,
@@ -36,7 +26,7 @@ const config = {
             color: 'cyan'
         },
         score: {
-            fontFamily: 'Arial',
+            fontFamily: 'Montserrat',
             fontSize: 28,
             color: '#bb0000',
             padding: {
