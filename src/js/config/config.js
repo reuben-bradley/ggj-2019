@@ -44,7 +44,7 @@ const config = {
             }
       },
     },
-    partyTickTime: 1000,
+    partyTickTime: 500,
     newPersonSpawnTime: 6000,
     happinessDecline: -2,
     happinessGrowth: 1,
